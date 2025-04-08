@@ -1,0 +1,67 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "version": "1.0.0",
+    "manifestVersion": "1.16",
+    "id": "{{BOT_ID}}",
+    "packageName": "com.company.faultcodebot",
+    "name": {
+        "short": "Fault Code Helper",
+        "full": "Fault Code Interpreter Bot"
+    },
+    "description": {
+        "short": "Quick fault code lookup",
+        "full": "Helps technical teams interpret fault codes without needing to contact an engineer. Simply send a fault code to get its explanation."
+    },
+    "developer": {
+        "name": "Your Company Name",
+        "mpnId": "",
+        "websiteUrl": "https://www.yourcompany.com",
+        "privacyUrl": "https://www.yourcompany.com/privacy",
+        "termsOfUseUrl": "https://www.yourcompany.com/terms"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "{{BOT_ID}}",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "help",
+                            "description": "Shows help information"
+                        },
+                        {
+                            "title": "list",
+                            "description": "Lists all available fault codes"
+                        },
+                        {
+                            "title": "search",
+                            "description": "Search for a specific fault code"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+} 
