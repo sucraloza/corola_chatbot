@@ -1,0 +1,189 @@
+Name;Codigo;Codigo Decimal;Comentarios;Descripcion Corta;System;Nivel
+Fuga de aire;0x4100;16640;;BENJA;Air;Nivel 3
+Temperatura Compresor;0x4101;16641;;BENJA;Air;Nivel 3
+Falla motor Compresor;0x4102;16642;;BENJA;Air;Nivel 3
+Presion Baja;0x4103;16643;;BENJA;Air;Nivel 2
+Presión Críticamente Baja;0x4104;16644;;BENJA;Air;Nivel 7
+Error compresor;0x4105;16645;;BENJA;Air;Nivel 3
+Compresor Temp sensor;0x4106;16646;;BENJA;Air;Nivel 3
+Batterias CAN;0x4200;16896;;BENJA;Battery;Nivel 11
+Baterías en Falla CATL;0x4201;16897;;BENJA;Battery;Nivel 7
+Battery Catastrofic Failure CATL;0x4202;16898;;BENJA;Battery;Nivel 13
+Sobre Temperatura Baterías;0x4203;16899;;BENJA;Battery;Nivel 7
+Rutina de carga;0x4204;16900;;BENJA;Battery;Nivel 8
+Liquido Ref. BTMS;0x4205;16901;Refrigerante Baterias bajo;BENJA;Battery;Nivel 4
+BTMS en Falla;0x4206;16902;;BENJA;Battery;Nivel 1
+SOC Alto;0x4207;16903;;BENJA;Battery;Nivel 4
+SOC Bajo;0x4208;16904;;BENJA;Battery;Nivel 4
+SOC Critico;0x4209;16905;;BENJA;Battery;Nivel 7
+Aislación Neg. Baja;0x420A;16906;;BENJA;Battery;Nivel 1
+Aislación Pos. Baja;0x420B;16907;;BENJA;Battery;Nivel 1
+Aislación Neg. Critica;0x420C;16908;;BENJA;Battery;Nivel 3
+Aislación Pos. Critica;0x420D;16909;;BENJA;Battery;Nivel 3
+Sobre Temperatra Baterias;0x420E;16910;;BENJA;Battery;Nivel 4
+Baterías en alerta CATL;0x420F;16911;;BENJA;Battery;Nivel 3
+BTMS MQ T15 error;0x4210;16912;;BENJA;Battery;Nivel 1
+BTMS MQ Precharge;0x4211;16913;;BENJA;Battery;Nivel 1
+BTMS MQ Fault;0x4212;16914;;BENJA;Battery;Nivel 1
+BTMS MQ Shutdown TO;0x4213;16915;;BENJA;Battery;Nivel 1
+BTMS MQ PowerOff TO;0x4214;16916;;BENJA;Battery;Nivel 1
+BTMS MQ CAN Send;0x4215;16917;;BENJA;Battery;Nivel 1
+BTMS MQ Undefined;0x4216;16918;;BENJA;Battery;Nivel 1
+BTMS MQ Undefined;0x4217;16919;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4218;16920;;BENJA;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure;0x4219;16921;;BENJA;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault;0x4220;16928;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4221;16929;;BENJA;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure;0x4222;16930;;BENJA;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault;0x4223;16931;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4224;16932;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4225;16933;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4226;16934;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4227;16935;;BENJA;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure;0x4228;16936;;BENJA;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault;0x4229;16937;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4230;16944;;BENJA;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure;0x4231;16945;;BENJA;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault;0x4232;16946;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4233;16947;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4234;16948;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4235;16949;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4236;16950;;BENJA;Battery;Nivel 1
+BTMS en Falla - Compressor level 2 fault;0x4237;16951;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4238;16952;;BENJA;Battery;Nivel 1
+BTMS en Falla - Fan level 2 fault;0x4239;16953;;BENJA;Battery;Nivel 1
+BTMS en Falla - High pressure sensor level 2 fault;0x4240;16960;;BENJA;Battery;Nivel 1
+BTMS en Falla - Low pressure sensor level 3 fault;0x4241;16961;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4242;16962;;BENJA;Battery;Nivel 1
+BTMS en Falla - BTMS outlet temperature sensor level 2 fault;0x4243;16963;;BENJA;Battery;Nivel 1
+BTMS en Falla - Reserved;0x4244;16964;;BENJA;Battery;Nivel 1
+BTMS en Falla - Water pump;0x4245;16965;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4246;16966;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4247;16967;;BENJA;Battery;Nivel 1
+BTMS en Falla - Water level sensor level 2 fault;0x4248;16968;;BENJA;Battery;Nivel 1
+BTMS en Falla - PTC water temperature sensor level 2 fault;0x4249;16969;;BENJA;Battery;Nivel 1
+BTMS en Falla - High voltage precharge 1 level fault;0x4250;16976;;BENJA;Battery;Nivel 1
+BTMS en Falla - K2 relay level 1 fault;0x4251;16977;;BENJA;Battery;Nivel 1
+BTMS en Falla - DCDC level 1 fault;0x4252;16978;;BENJA;Battery;Nivel 1
+BTMS en Falla - Slave unit 1 level 1 fault;0x4253;16979;;BENJA;Battery;Nivel 1
+BTMS en Falla - Slave unit 2 level 2 fault;0x4254;16980;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4255;16981;;BENJA;Battery;Nivel 1
+BTMS en Falla - Lost communication from unit 1 level 1 fault;0x4256;16982;;BENJA;Battery;Nivel 1
+BTMS en Falla - Slave unit 2 level 1 fault;0x4257;16983;;BENJA;Battery;Nivel 1
+BTMS en Falla - Slave unit 2 level 2 fault;0x4258;16984;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4259;16985;;BENJA;Battery;Nivel 1
+BTMS en Falla - Lost communication from unit 2 level 1 fault;0x4260;16992;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4261;16993;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4262;16994;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4263;16995;;BENJA;Battery;Nivel 1
+BTMS en Falla - undefined;0x4264;16996;;BENJA;Battery;Nivel 1
+BTMS en Falla - Low voltage power supply level 2 fault;0x4265;16997;;BENJA;Battery;Nivel 1
+BTMS en Falla - BMS and TMS CAN communication is abnormal;0x4266;16998;;BENJA;Battery;Nivel 1
+BTMS en Falla - High voltage total loop contactor level 1 fault;0x4267;16999;;BENJA;Battery;Nivel 1
+BTMS en Falla - Exhaust gas temperature level 2 fault;0x4268;17000;;BENJA;Battery;Nivel 1
+BTMS en Falla - DCDC Level 2 Fault;0x4269;17001;;BENJA;Battery;Nivel 1
+Dirección CAN;0x4400;17408;;BENJA;Steering;Nivel 7
+Dirección en Falla ;0x4401;17409;;BENJA;Steering;Nivel 7
+Bomba Cal. CAN;0x4800;18432;;BENJA;Heating;Nivel 1
+Bomba de Ref. Calefa en Falla;0x4801;18433;;BENJA;Heating;Nivel 1
+Liquido Ref. Calefacción;0x4802;18434;Liquido calefaccion bajo;BENJA;Heating;Nivel 1
+PTC 1 CAN;0x4803;18435;;BENJA;Heating;Nivel 1
+PTC 1 en Falla;0x4804;18436;;BENJA;Heating;Nivel 1
+PTC 2 CAN;0x4805;18437;;BENJA;Heating;Nivel 1
+PTC 2 en Falla;0x4806;18438;;BENJA;Heating;Nivel 1
+Inv. Aux. CAN;0x4C00;19456;;BENJA;Aux. Inv.;Nivel 6
+Inv. Auxiliar en Falla;0x4C01;19457;;BENJA;Aux. Inv.;Nivel 6
+Temperatura Inv. Auxiliar;0x4C02;19458;;BENJA;Aux. Inv.;Nivel 4
+PSU not Working;0x4C03;19459;;BENJA;Aux. Inv.;Nivel 2
+PSU Low Voltage;0x4C04;19460;;BENJA;Aux. Inv.;Nivel 6
+PSU Fault;0x4C05;19461;;BENJA;Aux. Inv.;Nivel 6
+DCU Fault;0x4C06;19462;;BENJA;Aux. Inv.;Nivel 7
+SCU HV Fuse;0x4C07;19463;Lenze sin ignición;BENJA;Aux. Inv.;Nivel 7
+TPD Fault - DCU error;0x4C08;19464;TPD presenta falla;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - Compressor error;0x4C09;19465;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - AC timeout;0x4C0A;19466;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - Compressor timeout;0x4C0B;19467;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - Both switch open;0x4C0C;19468;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - Disengage timeout;0x4C0D;19469;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - AC comp error;0x4C0E;19470;;BENJA;Aux. Inv.;Nivel 3
+TPD Fault - Default error;0x4C0F;19471;;BENJA;Aux. Inv.;Nivel 3
+PSU Warning;0x4C11;19473;;BENJA;Aux. Inv.;Nivel 1
+DCU Warning;0x4C12;19474;;BENJA;Aux. Inv.;Nivel 4
+Inv. Motor CAN;0x4D00;19712;;BENJA;Motor;Nivel 10
+Inv. Motor en Falla;0x4D01;19713;;BENJA;Motor;Nivel 10
+Bomba Motor CAN;0x4D02;19714;;BENJA;Motor;Nivel 1
+Bomba de Ref. Motor en Falla;0x4D03;19715;;BENJA;Motor;Nivel 4
+Liquido Ref. Motor;0x4D04;19716;Liquido de refigerancion bajo;BENJA;Motor;Nivel 5
+Regeneracion Limitada;0x4D05;19717;Poco freno regenerativo disponible;BENJA;Motor;Nivel 4
+Motor con sobretemperatura;0x4D06;19718;Motor sobrecalentado;BENJA;Motor;Nivel 1
+Apertura DC-Link Intespestiva;0x5001;20481;;BENJA;PDU;Nivel 13
+Contactor no Cierra;0x5002;20482;;BENJA;PDU;Nivel 2
+Contactor no Abre;0x5003;20483;;BENJA;PDU;Nivel 3
+Precarga en Falla;0x5004;20484;;BENJA;PDU;Nivel 2
+Descarga en Falla;0x5005;20485;;BENJA;PDU;Nivel 2
+Precarga no cierra;0x5006;20486;;BENJA;PDU;Nivel 2
+CAN 1;0x5300;21248;;BENJA;System;Nivel 10
+CAN 2;0x5301;21249;;BENJA;System;Nivel 10
+CAN 3;0x5302;21250;;BENJA;System;Nivel 11
+CAN 4;0x5304;21252;;BENJA;System;Nivel 4
+ACU CAN;0x5305;21253;;BENJA;System;Nivel 8
+Tensión Auxiliar;0x5306;21254;;BENJA;System;Nivel 6
+Eeprom error;0x5307;21255;;BENJA;System;Nivel 1
+Botón de Emergencia;0x5308;21256;Boton de emergencia activado;BENJA;System;Nivel 12
+Verificación Controles;0x5309;21257;Verifique controles;BENJA;System;Nivel 0
+Key Off on Drive;0x530A;21258;;BENJA;System;Nivel 2
+Power Off Inverter Timeout;0x530B;21259;;BENJA;System;Nivel 10
+Power Off Aux Current Timeout;0x530C;21260;;BENJA;System;Nivel 1
+Power Off PDU Open Timeout;0x530D;21261;;BENJA;System;Nivel 13
+Power Off Battery Open Timeout;0x530E;21262;;BENJA;System;Nivel 13
+Vision sin Respuesta;0x530F;21263;;BENJA;System;Nivel 1
+Power On PDU Circuit;0x5310;21264;;BENJA;System;Nivel 3
+Power On Battery CAN;0x5311;21265;;BENJA;System;Nivel 1
+Power On Protocol Inverter;0x5312;21266;;BENJA;System;Nivel 1
+Power On Battery Ready;0x5313;21267;;BENJA;System;Nivel 1
+Power On PDU Close;0x5314;21268;;BENJA;System;Nivel 2
+Power On HVIL;0x5315;21269;;BENJA;System;Nivel 2
+HVIL Con Velocidad;0x5316;21270;;BENJA;System;Nivel 8
+HVIL Sin Velocidad;0x5317;21271;;BENJA;System;Nivel 8
+Throttle Stuck;0x5318;21272;Limpiar Pedal;BENJA;System;Nivel 4
+Botonera CAN en falla;0x5319;21273;Verificar conexión en módulo;BENJA;System;Nivel 3
+Throttle Errors;0x531A;21274;Pedal con Error de lectura;BENJA;System;Nivel 3
+AC_Comp_CAN;0x5400;21504;Posible falla en linea CAN 2;BENJA;AC;Nivel 2
+AC_Comp_Start;0x5401;21505;Rotor compresor bloqueado;BENJA;AC;Nivel 1
+AC_Comp_Over_Current;0x5402;21506;Falla en el compresor (remplazar);BENJA;AC;Nivel 1
+AC_Comp_Over_Voltage;0x5403;21507;Falla eléctrica HVDC;BENJA;AC;Nivel 1
+AC_Comp_Under_Voltage;0x5404;21508;No llega tensión HVDC revisar conexión alta tensión;BENJA;AC;Nivel 1
+AC_Comp_Over_Temperature;0x5405;21509;Sobre temperatura compresor, posible problema con el gas;BENJA;AC;Nivel 1
+AC_Comp_Comunication;0x5406;21510;Compresor levantó una falla en la transmisión CAN, verificar presencia msg de Compresor en CAN 2;BENJA;AC;Nivel 1
+PTC1 AbnormalHighVoltage;0x5500;21760;Voltaje fuera de rango en barra DC;BENJA;ACU;Nivel 1
+PTC1 ReverseHighVoltage;0x5501;21761;Voltaje invertido en barra DC;BENJA;ACU;Nivel 1
+PTC1 AbnormalIGBTVoltage;0x5502;21762;Voltaje fuera de rango en el control;BENJA;ACU;Nivel 1
+PTC1 Overtemperature;0x5503;21763;Sobretemperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC1 IGBTOvertemperature;0x5504;21764;Sobretemperatura en el control;BENJA;ACU;Nivel 1
+PTC1 CANMissing;0x5505;21765;Falla de comunicación con el módulo;BENJA;ACU;Nivel 1
+PTC1 IGBT1Breakdown;0x5506;21766;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC1 IGBT2Breakdown;0x5507;21767;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC1 IGBT1OpenCircuit;0x5508;21768;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC1 IGBT2OpenCircuit;0x5509;21769;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC1 OutTemperatureSensorOpenCircuit;0x550A;21770;Falla sensor de temperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC1 OutTemperatureSensorShortCircuit;0x550B;21771;Falla sensor de temperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC1 IGBTTemperatureSensorOpenCircuit;0x550C;21772;Falla sensor de temperatura en control;BENJA;ACU;Nivel 1
+PTC1 IGBTTemperatureSensorShortCircuit;0x550D;21773;Falla sensor de temperatura en control;BENJA;ACU;Nivel 1
+PTC1 Flow Stuck;0x550E;21774;Flujo refrigerante en PTC estancado;BENJA;ACU;Nivel 1
+PTC2 AbnormalHighVoltage;0x5510;21776;Voltaje fuera de rango en barra DC;BENJA;ACU;Nivel 1
+PTC2 ReverseHighVoltage;0x5511;21777;Voltaje invertido en barra DC;BENJA;ACU;Nivel 1
+PTC2 AbnormalIGBTVoltage;0x5512;21778;Voltaje fuera de rango en el control;BENJA;ACU;Nivel 1
+PTC2 Overtemperature;0x5513;21779;Sobretemperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC2 IGBTOvertemperature;0x5514;21780;Sobretemperatura en el control;BENJA;ACU;Nivel 1
+PTC2 CANMissing;0x5515;21781;Falla de comunicación con el módulo;BENJA;ACU;Nivel 1
+PTC2 IGBT1Breakdown;0x5516;21782;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC2 IGBT2Breakdown;0x5517;21783;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC2 IGBT1OpenCircuit;0x5518;21784;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC2 IGBT2OpenCircuit;0x5519;21785;Error en el control, reemplazar;BENJA;ACU;Nivel 1
+PTC2 OutTemperatureSensorOpenCircuit;0x551A;21786;Falla sensor de temperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC2 OutTemperatureSensorShortCircuit;0x551B;21787;Falla sensor de temperatura en manguera de salida;BENJA;ACU;Nivel 1
+PTC2 IGBTTemperatureSensorOpenCircuit;0x551C;21788;Falla sensor de temperatura en control;BENJA;ACU;Nivel 1
+PTC2 IGBTTemperatureSensorShortCircuit;0x551D;21789;Falla sensor de temperatura en control;BENJA;ACU;Nivel 1
+PTC2 Flow Stuck;0x551E;21790;Flujo refrigerante en PTC estancado;BENJA;ACU;Nivel 1
+PTC Default Error;0x5520;21792;Falla general en PTC, error en diagnóstico;BENJA;ACU;Nivel 1
+ASR limit active;0x5601;22017;ASR limita torque motor;BENJA;MB chasis;Nivel 4
