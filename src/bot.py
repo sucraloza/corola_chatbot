@@ -1,6 +1,8 @@
 import logging
 import os
 import pandas as pd
+import time
+from datetime import datetime
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
@@ -13,7 +15,10 @@ load_dotenv()
 RED = '\033[91m'
 RESET = '\033[0m'
 
-# Configure logging with color
+# Create logs directory if it doesn't exist
+os.makedirs('logs', exist_ok=True)
+
+# Configure logging with color and file output
 class ColoredFormatter(logging.Formatter):
     """Custom formatter that adds colors to log levels"""
     
@@ -26,12 +31,62 @@ class ColoredFormatter(logging.Formatter):
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+# Clear existing handlers
+for handler in logger.handlers[:]:
+    logger.removeHandler(handler)
+
 # Create console handler with custom formatter
 console_handler = logging.StreamHandler()
 console_handler.setFormatter(ColoredFormatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 ))
 logger.addHandler(console_handler)
+
+# Create file handler for detailed logs
+file_handler = logging.FileHandler(f'logs/bot_{datetime.now().strftime("%Y%m%d")}.log')
+file_handler.setFormatter(logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+))
+logger.addHandler(file_handler)
+
+# Create error file handler
+error_handler = logging.FileHandler(f'logs/errors_{datetime.now().strftime("%Y%m%d")}.log')
+error_handler.setLevel(logging.ERROR)
+error_handler.setFormatter(logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+))
+logger.addHandler(error_handler)
+
+def log_interaction(func):
+    """Decorator to log user interactions and timing"""
+    async def wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
+        start_time = time.time()
+        user_id = update.effective_user.id if update.effective_user else "Unknown"
+        username = update.effective_user.username if update.effective_user else "Unknown"
+        message_text = update.message.text if update.message else "No message"
+        
+        logging.info(f"REQUEST - User: {user_id} (@{username}) - Message: '{message_text}'")
+        
+        try:
+            result = await func(update, context)
+            end_time = time.time()
+            response_time = (end_time - start_time) * 1000  # Convert to milliseconds
+            
+            logging.info(f"RESPONSE - User: {user_id} - Response time: {response_time:.2f}ms - Success")
+            
+            # Log slow responses
+            if response_time > 1000:  # More than 1 second
+                logging.warning(f"SLOW_RESPONSE - User: {user_id} - Response time: {response_time:.2f}ms")
+            
+            return result
+        except Exception as e:
+            end_time = time.time()
+            response_time = (end_time - start_time) * 1000
+            
+            logging.error(f"ERROR - User: {user_id} - Response time: {response_time:.2f}ms - Error: {str(e)}")
+            raise
+    
+    return wrapper
 
 # Load fault codes database
 def load_fault_codes():
@@ -106,8 +161,10 @@ def load_fault_codes():
 
 fault_codes = load_fault_codes()
 
+@log_interaction
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send a message when the command /start is issued."""
+    logging.info("COMMAND - /start executed")
     welcome_message = (
         "👋 Welcome to the Fault Code Interpreter Bot!\n\n"
         "To look up a fault code, send a message in this format:\n"
@@ -128,8 +185,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     await update.message.reply_text(welcome_message)
 
+@log_interaction
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send a message when the command /help is issued."""
+    logging.info("COMMAND - /help executed")
     help_text = (
         "To use this bot, send a message in this format:\n"
         "<product> <code>\n\n"
@@ -156,8 +215,10 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     await update.message.reply_text(help_text)
 
+@log_interaction
 async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """List all available fault codes."""
+    logging.info("COMMAND - /list executed")
     if not fault_codes:
         await update.message.reply_text("No fault codes available at the moment.")
         return
@@ -209,8 +270,10 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(codes_list)
 
+@log_interaction
 async def catl_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle CATL command for float value lookup."""
+    logging.info("COMMAND - CATL lookup requested")
     message = update.message.text.strip()
     
     # Check if it's a CATL command
@@ -234,15 +297,18 @@ async def catl_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     command, value = parts
     
     # Look up the float value
+    logging.info(f"CATL_LOOKUP - Input value: {value}")
     result = lookup_float_value(value)
     
     if result is not None:
+        logging.info(f"CATL_SUCCESS - Input: {value} -> Result: {result}")
         response = (
             f"🔍 CATL Lookup Result:\n"
             f"📥 Input Value: {value}\n"
             f"📤 SOC Value: {result}"
         )
     else:
+        logging.warning(f"CATL_INVALID - Input value: {value} is invalid")
         response = (
             f"❌ Invalid input value: {value}\n\n"
             "Please provide a valid number between 2.800 and 3.700\n\n"
@@ -254,8 +320,10 @@ async def catl_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(response)
     return True
 
+@log_interaction
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle incoming messages and look up fault codes."""
+    logging.info("MESSAGE_HANDLER - Processing incoming message")
     message = update.message.text.strip()
     
     # Check if it's a CATL command first
@@ -304,9 +372,11 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         code = '0x' + code
     
     # Look up the code in the appropriate product dictionary
+    logging.info(f"FAULT_LOOKUP - Product: {product}, Code: {code}")
     product_dict = fault_codes[product]
     if code in product_dict:
         fault_info = product_dict[code]
+        logging.info(f"FAULT_SUCCESS - Product: {product}, Code: {code} -> Found")
         response = (
             f"📝 Fault Code: {code}\n"
             f"🔍 Description: {fault_info['description']}\n"
@@ -315,6 +385,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"🏭 Product: {fault_info['product']}"
         )
     else:
+        logging.warning(f"FAULT_NOT_FOUND - Product: {product}, Code: {code} -> Not found")
         response = (
             f"❌ Sorry, I couldn't find code {code} for {product}.\n\n"
             "Please enter either:\n"
@@ -329,21 +400,30 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     """Start the bot."""
+    logging.info("="*50)
+    logging.info("BOT_STARTUP - Starting Telegram Bot")
+    logging.info(f"BOT_STARTUP - Log files: logs/bot_{datetime.now().strftime('%Y%m%d')}.log")
+    logging.info(f"BOT_STARTUP - Error files: logs/errors_{datetime.now().strftime('%Y%m%d')}.log")
+    
     # Create the Application
     token = os.getenv('TELEGRAM_TOKEN')
     if not token:
         logging.error("\033[91mNo TELEGRAM_TOKEN found in environment variables!\033[0m")
         return
 
+    logging.info("BOT_STARTUP - Token found, building application")
     application = Application.builder().token(token).build()
 
     # Add handlers
+    logging.info("BOT_STARTUP - Adding command handlers")
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("list", list_codes))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
     # Start the bot
+    logging.info("BOT_STARTUP - Starting polling")
+    logging.info("="*50)
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == '__main__':
