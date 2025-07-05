@@ -240,7 +240,7 @@ async def catl_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         response = (
             f"🔍 CATL Lookup Result:\n"
             f"📥 Input Value: {value}\n"
-            f"📤 Return Value: {result}"
+            f"📤 SOC Value: {result}"
         )
     else:
         response = (
