@@ -239,58 +239,18 @@ except Exception as e:
 if __name__ == "__main__":
     # Create and save extended lookup table
     
-    # save_extended_lookup_table(num_points=10)
-    plot_lookup_table(" ",show_segments=True)
+    # # save_extended_lookup_table(num_points=10)
+    plot_lookup_table("table",show_segments=True)
 
-    # 1. Test with a complete range of values
-    test_range = np.linspace(2.800, 3.700, 1000).round(3)  # 1000 evenly spaced points
-    test_results = []
     
-    print("\nTesting complete range from 2.800 to 3.700:")
-    for value in test_range:
-        result = lookup_float_value(f"{value:.3f}")
-        if result is not None:
-            test_results.append({
-                'input_value': value,
-                'return_value': float(result)
-            })
-            # print(f"Input: {value:.3f} -> Return value: {result}")
+    # Original test values
+    print("\nTesting with original test values:")
+    test_values = ["3.247",	"3.242"]
     
-    # 2. Save test results to CSV
-    test_df = pd.DataFrame(test_results)
-    test_df.to_csv('data/test_results.csv', index=False)
-    print(f"\nTest results saved to data/test_results.csv")
-    
-    # 3. Plot test results
-    plt.figure(figsize=(12, 8))
-    plt.scatter(test_df['return_value'], test_df['input_value'], 
-                color='red', s=50, label='Test Results')
-    plt.title('Test Results: Return Values vs Input Values')
-    plt.xlabel('Return Value')
-    plt.ylabel('Input Value')
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.legend()
-    
-    # Add some value labels for reference
-    for i in range(0, len(test_df), 100):  # Label every 100th point
-        x = test_df.iloc[i]['return_value']
-        y = test_df.iloc[i]['input_value']
-        plt.annotate(f'{y:.3f}', (x, y), textcoords="offset points", 
-                    xytext=(0,10), ha='center')
-    
-    plt.show()
-    plt.savefig('data/test_results_plot.png')
-    print("Test results plot saved to data/test_results_plot.png")
-    # plt.close()
-    
-    # # Original test values
-    # print("\nTesting with original test values:")
-    # test_values = ["3.322", "2.900", "3.700", "4.000", "invalid"]
-    
-    # for value in test_values:
-    #     result = lookup_float_value(value)
-    #     if result is not None:  # This will work correctly even if result is 0
-    #         print(f"Input: {value} -> Return value: {result}")
-    #     else:
-    #         print(f"Input: {value} -> No valid result found")
+    for value in test_values:
+        result = lookup_float_value(value)
+        if result is not None:  # This will work correctly even if result is 0
+            print(f"Input: {value} -> Return value: {result}")
+        else:
+            print(f"Input: {value} -> No valid result found")
 
