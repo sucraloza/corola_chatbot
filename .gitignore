@@ -3,6 +3,9 @@
 *.env
 config.py
 
+# Files
+*.png
+
 # Python
 __pycache__/
 *.py[cod]

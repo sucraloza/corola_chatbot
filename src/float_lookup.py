@@ -240,7 +240,7 @@ if __name__ == "__main__":
     # Create and save extended lookup table
     
     # # save_extended_lookup_table(num_points=10)
-    plot_lookup_table("table",show_segments=True)
+    # plot_lookup_table("table_compact",show_segments=True)
 
     
     # Original test values

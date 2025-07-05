@@ -4,6 +4,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from float_lookup import lookup_float_value
 
 # Load environment variables
 load_dotenv()
@@ -117,6 +118,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Examples:\n"
         "Q1 16897\n"
         "Q2 0x4201\n\n"
+        "For CATL float value lookup:\n"
+        "CATL <value>\n"
+        "Example: CATL 3.247\n\n"
         "Available commands:\n"
         "/start - Show this welcome message\n"
         "/help - Show help information\n"
@@ -141,6 +145,10 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "⚙️ System: Which system the code belongs to\n"
         "⚠️ Severity: The severity level\n"
         "🏭 Product: The product you specified\n\n"
+        "For CATL float value lookup:\n"
+        "CATL <value>\n"
+        "Example: CATL 3.247\n"
+        "Valid range: 2.800 - 3.700\n\n"
         "Commands:\n"
         "/start - Start the bot\n"
         "/help - Show this help message\n"
@@ -201,9 +209,62 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(codes_list)
 
+async def catl_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Handle CATL command for float value lookup."""
+    message = update.message.text.strip()
+    
+    # Check if it's a CATL command
+    if not message.upper().startswith('CATL'):
+        return False
+    
+    # Extract the value after CATL
+    parts = message.split()
+    if len(parts) != 2:
+        response = (
+            "❌ Invalid CATL format. Please use:\n"
+            "CATL <value>\n\n"
+            "Examples:\n"
+            "CATL 3.247\n"
+            "CATL 3.242\n\n"
+            "Valid range: 2.800 - 3.700"
+        )
+        await update.message.reply_text(response)
+        return True
+    
+    command, value = parts
+    
+    # Look up the float value
+    result = lookup_float_value(value)
+    
+    if result is not None:
+        response = (
+            f"🔍 CATL Lookup Result:\n"
+            f"📥 Input Value: {value}\n"
+            f"📤 Return Value: {result}"
+        )
+    else:
+        response = (
+            f"❌ Invalid input value: {value}\n\n"
+            "Please provide a valid number between 2.800 and 3.700\n\n"
+            "Examples:\n"
+            "CATL 3.247\n"
+            "CATL 2.932"
+        )
+    
+    await update.message.reply_text(response)
+    return True
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle incoming messages and look up fault codes."""
-    message = update.message.text.strip().upper()
+    message = update.message.text.strip()
+    
+    # Check if it's a CATL command first
+    if message.upper().startswith('CATL'):
+        await catl_command(update, context)
+        return
+    
+    # Convert to uppercase for fault code processing
+    message = message.upper()
     
     # Split message into product and code
     parts = message.split()
@@ -216,7 +277,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "- Q2\n\n"
             "Examples:\n"
             "Q1 16897\n"
-            "Q2 0x4201"
+            "Q2 0x4201\n\n"
+            "Or use CATL command:\n"
+            "CATL 3.247"
         )
         await update.message.reply_text(response)
         return
@@ -257,7 +320,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "Please enter either:\n"
             "- Hex code (e.g., 0x4201)\n"
             "- Decimal code (e.g., 16897)\n\n"
-            "Use /list to see available codes."
+            "Use /list to see available codes.\n\n"
+            "Or use CATL command for float value lookup:\n"
+            "CATL 3.247"
         )
     
     await update.message.reply_text(response)
