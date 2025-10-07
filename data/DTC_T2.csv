@@ -1,0 +1,265 @@
+Name;Codigo;Codigo Decimal;Comentarios;Descripcion Corta;System;Nivel;Source File;Macro Name
+Buttons Can K2v Recived;0x3900;14592;;;Panel;Nivel 3;Fusi_Panel_RBN.c;DTC_BUTTONS_CAN_K2V_RECIVED
+Vision Can Life Recived;0x3901;14593;;;Panel;Nivel 2;Fusi_Panel_RBN.c;DTC_VISION_CAN_LIFE_RECIVED
+Jarvis Can System Recived;0x4000;16384;;;Jarvis;Nivel 3;Fusi_Jarvis.c;DTC_JARVIS_CAN_SYSTEM_RECIVED
+Jarvis Can Gpio Recived;0x4001;16385;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_GPIO_RECIVED
+Jarvis Can Error Recived;0x4002;16386;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_ERROR_RECIVED
+Jarvis Can Command Send;0x4003;16387;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_COMMAND_SEND
+Jarvis Can Speed Recived;0x4004;16388;;;Jarvis;Nivel 1;Fusi_Jarvis.c;DTC_JARVIS_CAN_SPEED_RECIVED
+Jarvis Can Pressure Recived;0x4005;16389;;;Jarvis;Nivel 4;Fusi_Jarvis.c;DTC_JARVIS_CAN_PRESSURE_RECIVED
+Jarvis Can Throttle Recived;0x4006;16390;;;Jarvis;Nivel 5;Fusi_Jarvis.c;DTC_JARVIS_CAN_THROTTLE_RECIVED
+Air Leak;0x4100;16640;;;Air;Nivel 2;Fusi_Service_Air.c;DTC_AIR_LEAK
+Air Compressor Temp;0x4101;16641;;;Air;Nivel 3;Fusi_Service_Air.c;DTC_AIR_COMPRESSOR_TEMP
+Air Low Pressure;0x4102;16642;;;Air;Nivel 3;Fusi_Service_Air.c;DTC_AIR_LOW_PRESSURE
+Air Critic Low Pressure;0x4103;16643;;;Air;Nivel 4;Fusi_Service_Air.c;DTC_AIR_CRITIC_LOW_PRESSURE
+Air Startup Error;0x4104;16644;;;Air;Nivel 4;Fusi_Service_Air.c;DTC_AIR_STARTUP_ERROR
+Light Deltemp;0x4300;17152;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_LIGHT_DELTEMP
+Light Overtemp;0x4301;17153;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERTEMP
+Light Packoverhvolt;0x4302;17154;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_PACKOVERHVOLT
+Light Packlowhvolt;0x4303;17155;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_LIGHT_PACKLOWHVOLT
+Light Lowsoc;0x4304;17156;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_LIGHT_LOWSOC
+Light Overucell;0x4305;17157;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERUCELL
+Light Lowucell;0x4306;17158;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_LIGHT_LOWUCELL
+Light Lowinsres;0x4307;17159;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_LIGHT_LOWINSRES
+Light Ucelluniformity;0x4308;17160;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_LIGHT_UCELLUNIFORMITY
+Light Overchg;0x4309;17161;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERCHG
+Light Oversoc;0x430A;17162;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERSOC
+Light Overdischrgcurr;0x430B;17163;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERDISCHRGCURR
+Light Overchrgcurrinthedrive;0x430C;17164;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_LIGHT_OVERCHRGCURRINTHEDRIVE
+Light Chrgntctempover;0x430D;17165;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_LIGHT_CHRGNTCTEMPOVER
+Light Contidischrgcurroverlo;0x430E;17166;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_LIGHT_CONTIDISCHRGCURROVERLO
+Medium Deltemp;0x430F;17167;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_MEDIUM_DELTEMP
+Medium Overtemp;0x4310;17168;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERTEMP
+Medium Packoverhvolt;0x4311;17169;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_PACKOVERHVOLT
+Medium Packlowhvolt;0x4312;17170;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_MEDIUM_PACKLOWHVOLT
+Medium Lowsoc;0x4313;17171;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_MEDIUM_LOWSOC
+Medium Overucell;0x4314;17172;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERUCELL
+Medium Lowucell;0x4315;17173;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_MEDIUM_LOWUCELL
+Medium Lowinsres;0x4316;17174;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_LOWINSRES
+Medium Ucelluniformity;0x4317;17175;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_MEDIUM_UCELLUNIFORMITY
+Medium Overchg;0x4318;17176;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERCHG
+Medium Oversoc;0x4319;17177;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERSOC
+Medium Overdischrgcurr;0x431A;17178;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERDISCHRGCURR
+Medium Overchrgcurrinthedrive;0x431B;17179;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_OVERCHRGCURRINTHEDRIVE
+Medium Chrgntctempover;0x431C;17180;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_CHRGNTCTEMPOVER
+Medium Contidischrgcurroverlo;0x431D;17181;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_MEDIUM_CONTIDISCHRGCURROVERLO
+Severe Deltemp;0x431E;17182;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_SEVERE_DELTEMP
+Severe Overtemp;0x431F;17183;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERTEMP
+Severe Packoverhvolt;0x4320;17184;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_PACKOVERHVOLT
+Severe Packlowhvolt;0x4321;17185;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_PACKLOWHVOLT
+Severe Lowsoc;0x4322;17186;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_SEVERE_LOWSOC
+Severe Overucell;0x4323;17187;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERUCELL
+Severe Lowucell;0x4324;17188;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_LOWUCELL
+Severe Lowinsres;0x4325;17189;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_LOWINSRES
+Severe Ucelluniformity;0x4326;17190;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_SEVERE_UCELLUNIFORMITY
+Severe Overchg;0x4327;17191;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERCHG
+Severe Oversoc;0x4328;17192;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERSOC
+Severe Overdischrgcurr;0x4329;17193;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERDISCHRGCURR
+Severe Overchrgcurrinthedrive;0x432A;17194;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_OVERCHRGCURRINTHEDRIVE
+Severe Chrgntctempover;0x432B;17195;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_CHRGNTCTEMPOVER
+Severe Contidischrgcurroverlo;0x432C;17196;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_SEVERE_CONTIDISCHRGCURROVERLO
+Socchangefast;0x432D;17197;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_SOCCHANGEFAST
+Batsysnotmatch;0x432E;17198;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_BATSYSNOTMATCH
+Hvilfault;0x432F;17199;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_HVILFAULT
+Celloverdischrg;0x4330;17200;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_CELLOVERDISCHRG
+Celllowtemp;0x4331;17201;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_CELLLOWTEMP
+Packfirewarning;0x4332;17202;;;Battery;Nivel 8;Fusi_Batteries.c;DTC_PACKFIREWARNING
+Currsensorerr;0x4333;17203;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_CURRSENSORERR
+Powersupplyerr;0x4334;17204;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_POWERSUPPLYERR
+Tmserr;0x4335;17205;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_TMSERR
+Heatingfilmerr;0x4336;17206;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_HEATINGFILMERR
+Packselfprotect;0x4337;17207;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_PACKSELFPROTECT
+Mainloopprechrgerr;0x4338;17208;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_MAINLOOPPRECHRGERR
+Auxloopprechrgerr;0x4339;17209;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_AUXLOOPPRECHRGERR
+Chrginslowerr;0x433A;17210;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_CHRGINSLOWERR
+Acanlost;0x433B;17211;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_ACANLOST
+Innercommunicationerr;0x433C;17212;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_INNERCOMMUNICATIONERR
+Dcdcerr;0x433D;17213;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_DCDCERR
+Branchbreakerr;0x433E;17214;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_BRANCHBREAKERR
+Heatrelayopenerr;0x433F;17215;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_HEATRELAYOPENERR
+Heatrelaywelderr;0x4340;17216;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_HEATRELAYWELDERR
+Mainposrelayopenerr;0x4341;17217;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_MAINPOSRELAYOPENERR
+Mainposrelaywelderr;0x4342;17218;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_MAINPOSRELAYWELDERR
+Mainnegrelayopenerr;0x4343;17219;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_MAINNEGRELAYOPENERR
+Mainnegrelaywelderr;0x4344;17220;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_MAINNEGRELAYWELDERR
+Dcchrgpos1relayopenerr;0x4345;17221;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_DCCHRGPOS1RELAYOPENERR
+Dcchrgpos1relaywelderr;0x4346;17222;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_DCCHRGPOS1RELAYWELDERR
+Dcchrgneg1relayopenerr;0x4347;17223;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_DCCHRGNEG1RELAYOPENERR
+Dcchrgneg1relaywelderr;0x4348;17224;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_DCCHRGNEG1RELAYWELDERR
+Chrgconnecterr;0x4349;17225;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_CHRGCONNECTERR
+Overdischrgcurrwheninc;0x434A;17226;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_OVERDISCHRGCURRWHENINC
+Overchrgcurrinthechrg;0x434B;17227;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_OVERCHRGCURRINTHECHRG
+Chrgntcerr;0x434C;17228;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_CHRGNTCERR
+Elockerr;0x434D;17229;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_ELOCKERR
+Firedetectorerr;0x434E;17230;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_FIREDETECTORERR
+Socdiffererr;0x434F;17231;;;Battery;Nivel 1;Fusi_Batteries.c;DTC_SOCDIFFERERR
+Warning Regen Current Derrating;0x4350;17232;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_WARNING_REGEN_CURRENT_DERRATING
+Rem Over Ucell Light;0x4360;17248;;;Battery;Nivel 2;Fusi_Batteries.c;DTC_REM_OVER_UCELL_LIGHT
+Rem Over Ucell Medium;0x4361;17249;;;Battery;Nivel 4;Fusi_Batteries.c;DTC_REM_OVER_UCELL_MEDIUM
+Rem Over Ucell Severe;0x4362;17250;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_REM_OVER_UCELL_SEVERE
+Rem Over Ucell Most Severe;0x4363;17251;;;Battery;Nivel 8;Fusi_Batteries.c;DTC_REM_OVER_UCELL_MOST_SEVERE
+Rem Balancing Light;0x4364;17252;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_REM_BALANCING_LIGHT
+Rem Balancing Medium;0x4365;17253;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_REM_BALANCING_MEDIUM
+Rem Balancing Severe;0x4366;17254;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_REM_BALANCING_SEVERE
+Btms Mq Can Error;0x4401;17409;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_CAN_ERROR
+Btms Mq T15 Error;0x4402;17410;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_T15_ERROR
+Btms Mq Precharge Error;0x4403;17411;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_PRECHARGE_ERROR
+Btms Mq Btms Fault;0x4404;17412;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_BTMS_FAULT
+Btms Mq Wait Shutdown Timeout;0x4405;17413;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_WAIT_SHUTDOWN_TIMEOUT
+Btms Mq Power Off Timeout;0x4406;17414;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_POWER_OFF_TIMEOUT
+Btms Ptc Level 1;0x4407;17415;;;Heating;Nivel 2;Fusi_BTMS.c;DTC_BTMS_PTC_LEVEL_1
+Btms Ptc Level 2;0x4408;17416;;;Heating;Nivel 2;Fusi_BTMS.c;DTC_BTMS_PTC_LEVEL_2
+Btms Compressor Error;0x4409;17417;;;Air;Nivel 2;Fusi_BTMS.c;DTC_BTMS_COMPRESSOR_ERROR
+Btms Fan Error;0x4410;17424;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_FAN_ERROR
+Btms High Pressure Sensor Error;0x4411;17425;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_HIGH_PRESSURE_SENSOR_ERROR
+Btms Low Pressure Sensor Error;0x4412;17426;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_LOW_PRESSURE_SENSOR_ERROR
+Btms Outlet Temperature Sensor Error;0x4413;17427;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_OUTLET_TEMPERATURE_SENSOR_ERROR
+Btms Water Pump Error;0x4414;17428;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_WATER_PUMP_ERROR
+Btms Water Level Error;0x4415;17429;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_WATER_LEVEL_ERROR
+Btms Ptc Temperature Sensor Error;0x4416;17430;;;Heating;Nivel 2;Fusi_BTMS.c;DTC_BTMS_PTC_TEMPERATURE_SENSOR_ERROR
+Btms High Voltage Precharge;0x4417;17431;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_HIGH_VOLTAGE_PRECHARGE
+Btms K2 Realy Error;0x4418;17432;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_K2_REALY_ERROR
+Btms Dcdc Level 1 Error;0x4419;17433;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_DCDC_LEVEL_1_ERROR
+Btms Slave Unit 1 Level 1 Error;0x4420;17440;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_SLAVE_UNIT_1_LEVEL_1_ERROR
+Btms Slave Unit 1 Level 2 Error;0x4421;17441;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_SLAVE_UNIT_1_LEVEL_2_ERROR
+Btms Lost Communication Unit 1;0x4422;17442;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_LOST_COMMUNICATION_UNIT_1
+Btms Slave Unit 2 Level 1 Error;0x4423;17443;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_SLAVE_UNIT_2_LEVEL_1_ERROR
+Btms Slave Unit 2 Level 2 Error;0x4424;17444;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_SLAVE_UNIT_2_LEVEL_2_ERROR
+Btms Lost Communication Unit 2;0x4425;17445;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_LOST_COMMUNICATION_UNIT_2
+Btms Power Supply Low Voltage;0x4426;17446;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_POWER_SUPPLY_LOW_VOLTAGE
+Btms Can High Voltage Loop;0x4427;17447;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_CAN_HIGH_VOLTAGE_LOOP
+Btms Exhaust Gas Temperature;0x4428;17448;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_EXHAUST_GAS_TEMPERATURE
+Btms Dcdc Level 2 Error;0x4429;17449;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_DCDC_LEVEL_2_ERROR
+Btms Can Error;0x4430;17456;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_CAN_ERROR
+Scu Can Recived;0x4C00;19456;;;SCU;Nivel 3;Fusi_SCU.c;DTC_SCU_CAN_RECIVED
+Scu Overtemperature Warning;0x4C01;19457;;;SCU;Nivel 2;Fusi_SCU.c;DTC_SCU_OVERTEMPERATURE_WARNING
+Scu Overtemperature Fault;0x4C02;19458;;;SCU;Nivel 3;Fusi_SCU.c;DTC_SCU_OVERTEMPERATURE_FAULT
+Scu Psu Not Working;0x4C03;19459;;;SCU;Nivel 5;Fusi_SCU.c;DTC_SCU_PSU_NOT_WORKING
+Scu Psu Low Voltage;0x4C04;19460;;;SCU;Nivel 2;Fusi_SCU.c;DTC_SCU_PSU_LOW_VOLTAGE
+Scu Psu Fault;0x4C05;19461;;;SCU;Nivel 5;Fusi_SCU.c;DTC_SCU_PSU_FAULT
+Scu Dcu Fault;0x4C06;19462;;;SCU;Nivel 5;Fusi_SCU.c;DTC_SCU_DCU_FAULT
+Scu Can Send;0x4C09;19465;;;SCU;Nivel 1;Fusi_SCU.c;DTC_SCU_CAN_SEND
+Scu Invalid Address;0x4C0A;19466;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_INVALID_ADDRESS
+Scu Device Error;0x4C0B;19467;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_DEVICE_ERROR
+Scu Hw Sw Incompatible;0x4C0C;19468;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_HW_SW_INCOMPATIBLE
+Scu Initialization;0x4C0D;19469;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_INITIALIZATION
+Scu Bootloader;0x4C0E;19470;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_BOOTLOADER
+Scu Mc Reset;0x4C0F;19471;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_MC_RESET
+Scu T30 Overvoltage;0x4C10;19472;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_T30_OVERVOLTAGE
+Scu Data Record;0x4C11;19473;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_DATA_RECORD
+Scu Spi Comunication;0x4C12;19474;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_SPI_COMUNICATION
+Scu Download Firmware;0x4C13;19475;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_DOWNLOAD_FIRMWARE
+Scu Start Firmware;0x4C14;19476;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_START_FIRMWARE
+Scu Parameter Settings;0x4C15;19477;;;SCU;Nivel 4;Fusi_SCU.c;DTC_SCU_PARAMETER_SETTINGS
+Scu Public Can Timeout;0x4C16;19478;;;SCU;Nivel 3;Fusi_SCU.c;DTC_SCU_PUBLIC_CAN_TIMEOUT
+Scu Private Can Timeout;0x4C17;19479;;;SCU;Nivel 1;Fusi_SCU.c;DTC_SCU_PRIVATE_CAN_TIMEOUT
+Scu Setpoint Invalid;0x4C18;19480;;;SCU;Nivel 2;Fusi_SCU.c;DTC_SCU_SETPOINT_INVALID
+Scu Spi Wuc Read Fail;0x4C19;19481;;;SCU;Nivel 1;Fusi_SCU.c;DTC_SCU_SPI_WUC_READ_FAIL
+Scu Spi Wuc Config Fail;0x4C1A;19482;;;SCU;Nivel 1;Fusi_SCU.c;DTC_SCU_SPI_WUC_CONFIG_FAIL
+Scu Spi Wuc Sleep Fail;0x4C1B;19483;;;SCU;Nivel 1;Fusi_SCU.c;DTC_SCU_SPI_WUC_SLEEP_FAIL
+Scu Public Can Short Circuit;0x4C1C;19484;;;SCU;Nivel 3;Fusi_SCU.c;DTC_SCU_PUBLIC_CAN_SHORT_CIRCUIT
+Scu General Error Mc;0x4C1D;19485;;;SCU;Nivel 5;Fusi_SCU.c;DTC_SCU_GENERAL_ERROR_MC
+Motor Can;0x4D00;19712;;;Motor;Nivel 3;Fusi_Motor.c;DTC_MOTOR_CAN
+Motor Regen;0x4D01;19713;;;Motor;Nivel 3;Fusi_Motor.c;DTC_MOTOR_REGEN
+Motor Emergency;0x4D02;19714;;;Motor;Nivel 8;Fusi_Motor.c;DTC_MOTOR_EMERGENCY
+Motor Battery Interlock;0x4D03;19715;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_BATTERY_INTERLOCK
+Motor Interlock;0x4D04;19716;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_INTERLOCK
+Motor Cover Open;0x4D05;19717;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_COVER_OPEN
+Motor Isolation;0x4D06;19718;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_ISOLATION
+Motor High Temperature Warning;0x4D07;19719;;;Motor;Nivel 1;Fusi_Motor.c;DTC_MOTOR_HIGH_TEMPERATURE_WARNING
+Motor High Temperature Error;0x4D08;19720;;;Motor;Nivel 3;Fusi_Motor.c;DTC_MOTOR_HIGH_TEMPERATURE_ERROR
+Pdu No Voltage;0x5001;20481;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_NO_VOLTAGE
+Pdu Bypass;0x5002;20482;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_BYPASS
+Pdu Welded;0x5003;20483;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_WELDED
+Pdu Precrarge;0x5004;20484;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_PRECRARGE
+Pdu Discharge;0x5005;20485;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_DISCHARGE
+Dc Link Pdu Circuits;0x5200;20992;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_PDU_CIRCUITS
+Dc Link Hvil;0x5201;20993;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_HVIL
+Dc Link Bcu Can;0x5202;20994;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_BCU_CAN
+Dc Link Inverter Ign;0x5203;20995;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_INVERTER_IGN
+Dc Link Inverter Can;0x5204;20996;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_INVERTER_CAN
+Dc Link Battery Ready;0x5205;20997;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_BATTERY_READY
+Dc Link Pdu Close;0x5206;20998;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_DC_LINK_PDU_CLOSE
+Dc Link Inverter Standby;0x5207;20999;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_DC_LINK_INVERTER_STANDBY
+Dc Link Aux Current;0x5208;21000;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_DC_LINK_AUX_CURRENT
+Dc Link Pdu Open;0x5209;21001;;;DC Link;Nivel 5;Fusi_DC_Link.c;DTC_DC_LINK_PDU_OPEN
+Dc Link Battery Off;0x520A;21002;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_DC_LINK_BATTERY_OFF
+Dc Link Pdu Welded;0x520B;21003;;;DC Link;Nivel 5;Fusi_DC_Link.c;DTC_DC_LINK_PDU_WELDED
+Dc Link Inverter Discharge;0x520C;21004;;;DC Link;Nivel 1;Fusi_DC_Link.c;DTC_DC_LINK_INVERTER_DISCHARGE
+System Throttle Stuck;0x5300;21248;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_THROTTLE_STUCK
+System High Soc;0x5301;21249;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_HIGH_SOC
+System Dc Link Low Voltage;0x5302;21250;;;System;Nivel 6;Fusi_System.c;DTC_SYSTEM_DC_LINK_LOW_VOLTAGE
+System Scu Hv Fuse;0x5303;21251;;;System;Nivel 5;Fusi_System.c;DTC_SYSTEM_SCU_HV_FUSE
+System Key Off On Drive;0x5304;21252;;;System;Nivel 1;Fusi_System.c;DTC_SYSTEM_KEY_OFF_ON_DRIVE
+System Motor Coolant Low;0x5305;21253;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_MOTOR_COOLANT_LOW
+System Heating Coolant Low;0x5306;21254;;;System;Nivel 1;Fusi_System.c;DTC_SYSTEM_HEATING_COOLANT_LOW
+System Gun While Drive;0x5307;21255;;;System;Nivel 2;Fusi_System.c;DTC_SYSTEM_GUN_WHILE_DRIVE
+Ac Can;0x5500;21760;;;AC;Nivel 2;Fusi_AC.c;DTC_AC_CAN
+Ac Start;0x5501;21761;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_START
+Ac Over Current;0x5502;21762;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_CURRENT
+Ac Over Voltage;0x5503;21763;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_VOLTAGE
+Ac Under Voltage;0x5504;21764;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_UNDER_VOLTAGE
+Ac Over Temperature;0x5505;21765;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_TEMPERATURE
+Ac Comunication;0x5506;21766;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_COMUNICATION
+Heating Ptc1 Can Error;0x5601;22017;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_CAN_ERROR
+Heating Ptc1 Abnormal High Voltage;0x5602;22018;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_ABNORMAL_HIGH_VOLTAGE
+Heating Ptc1 Reverse High Voltage;0x5603;22019;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_REVERSE_HIGH_VOLTAGE
+Heating Ptc1 Abnormal Igbt Voltage;0x5604;22020;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_ABNORMAL_IGBT_VOLTAGE
+Heating Ptc1 Overtemperature;0x5605;22021;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_OVERTEMPERATURE
+Heating Ptc1 Igbt Overtemperature;0x5606;22022;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT_OVERTEMPERATURE
+Heating Ptc1 Can Missing;0x5607;22023;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_CAN_MISSING
+Heating Ptc1 Igbt1 Breakdown;0x5608;22024;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT1_BREAKDOWN
+Heating Ptc1 Igbt2 Breakdown;0x5609;22025;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT2_BREAKDOWN
+Heating Ptc1 Igbt1 Open Circuit;0x560A;22026;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT1_OPEN_CIRCUIT
+Heating Ptc1 Igbt2 Open Circuit;0x560B;22027;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT2_OPEN_CIRCUIT
+Heating Ptc1 Out Temperature Sensor Open Cicrcuit;0x560C;22028;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_OUT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Heating Ptc1 Out Temperature Sensor Short Cicrcuit;0x560D;22029;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_OUT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Heating Ptc1 Igbt Temperature Sensor Open Cicrcuit;0x560E;22030;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Heating Ptc1 Igbt Temperature Sensor Short Cicrcuit;0x560F;22031;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_IGBT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Heating Ptc1 Flow Error;0x5610;22032;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_FLOW_ERROR
+Heating Ptc2 Can Error;0x5701;22273;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_CAN_ERROR
+Heating Ptc2 Abnormal High Voltage;0x5702;22274;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_ABNORMAL_HIGH_VOLTAGE
+Heating Ptc2 Reverse High Voltage;0x5703;22275;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_REVERSE_HIGH_VOLTAGE
+Heating Ptc2 Abnormal Igbt Voltage;0x5704;22276;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_ABNORMAL_IGBT_VOLTAGE
+Heating Ptc2 Overtemperature;0x5705;22277;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_OVERTEMPERATURE
+Heating Ptc2 Igbt Overtemperature;0x5706;22278;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT_OVERTEMPERATURE
+Heating Ptc2 Can Missing;0x5707;22279;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_CAN_MISSING
+Heating Ptc2 Igbt1 Breakdown;0x5708;22280;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT1_BREAKDOWN
+Heating Ptc2 Igbt2 Breakdown;0x5709;22281;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT2_BREAKDOWN
+Heating Ptc2 Igbt1 Open Circuit;0x570A;22282;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT1_OPEN_CIRCUIT
+Heating Ptc2 Igbt2 Open Circuit;0x570B;22283;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT2_OPEN_CIRCUIT
+Heating Ptc2 Out Temperature Sensor Open Cicrcuit;0x570C;22284;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_OUT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Heating Ptc2 Out Temperature Sensor Short Cicrcuit;0x570D;22285;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_OUT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Heating Ptc2 Igbt Temperature Sensor Open Cicrcuit;0x570E;22286;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Heating Ptc2 Igbt Temperature Sensor Short Cicrcuit;0x570F;22287;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_IGBT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Heating Ptc2 Flow Error;0x5710;22288;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC2_FLOW_ERROR
+Battery Thermal System Ptcb1 Can Error;0x6001;24577;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_CAN_ERROR
+Battery Thermal System Ptcb1 Abnormal High Voltage;0x6002;24578;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_ABNORMAL_HIGH_VOLTAGE
+Battery Thermal System Ptcb1 Reverse High Voltage;0x6003;24579;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_REVERSE_HIGH_VOLTAGE
+Battery Thermal System Ptcb1 Abnormal Igbt Voltage;0x6004;24580;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_ABNORMAL_IGBT_VOLTAGE
+Battery Thermal System Ptcb1 Overtemperature;0x6005;24581;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_OVERTEMPERATURE
+Battery Thermal System Ptcb1 Igbt Overtemperature;0x6006;24582;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT_OVERTEMPERATURE
+Battery Thermal System Ptcb1 Can Missing;0x6007;24583;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_CAN_MISSING
+Battery Thermal System Ptcb1 Igbt1 Breakdown;0x6008;24584;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT1_BREAKDOWN
+Battery Thermal System Ptcb1 Igbt2 Breakdown;0x6009;24585;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT2_BREAKDOWN
+Battery Thermal System Ptcb1 Igbt1 Open Circuit;0x600A;24586;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT1_OPEN_CIRCUIT
+Battery Thermal System Ptcb1 Igbt2 Open Circuit;0x600B;24587;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT2_OPEN_CIRCUIT
+Battery Thermal System Ptcb1 Out Temperature Sensor Open Cicrcuit;0x600C;24588;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_OUT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Battery Thermal System Ptcb1 Out Temperature Sensor Short Cicrcuit;0x600D;24589;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_OUT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Battery Thermal System Ptcb1 Igbt Temperature Sensor Open Cicrcuit;0x600E;24590;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Battery Thermal System Ptcb1 Igbt Temperature Sensor Short Cicrcuit;0x600F;24591;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB1_IGBT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Battery Thermal System Ptcb2 Can Error;0x6101;24833;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_CAN_ERROR
+Battery Thermal System Ptcb2 Abnormal High Voltage;0x6102;24834;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_ABNORMAL_HIGH_VOLTAGE
+Battery Thermal System Ptcb2 Reverse High Voltage;0x6103;24835;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_REVERSE_HIGH_VOLTAGE
+Battery Thermal System Ptcb2 Abnormal Igbt Voltage;0x6104;24836;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_ABNORMAL_IGBT_VOLTAGE
+Battery Thermal System Ptcb2 Overtemperature;0x6105;24837;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_OVERTEMPERATURE
+Battery Thermal System Ptcb2 Igbt Overtemperature;0x6106;24838;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT_OVERTEMPERATURE
+Battery Thermal System Ptcb2 Can Missing;0x6107;24839;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_CAN_MISSING
+Battery Thermal System Ptcb2 Igbt1 Breakdown;0x6108;24840;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT1_BREAKDOWN
+Battery Thermal System Ptcb2 Igbt2 Breakdown;0x6109;24841;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT2_BREAKDOWN
+Battery Thermal System Ptcb2 Igbt1 Open Circuit;0x610A;24842;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT1_OPEN_CIRCUIT
+Battery Thermal System Ptcb2 Igbt2 Open Circuit;0x610B;24843;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT2_OPEN_CIRCUIT
+Battery Thermal System Ptcb2 Out Temperature Sensor Open Cicrcuit;0x610C;24844;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_OUT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Battery Thermal System Ptcb2 Out Temperature Sensor Short Cicrcuit;0x610D;24845;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_OUT_TEMPERATURE_SENSOR_SHORT_CICRCUIT
+Battery Thermal System Ptcb2 Igbt Temperature Sensor Open Cicrcuit;0x610E;24846;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT_TEMPERATURE_SENSOR_OPEN_CICRCUIT
+Battery Thermal System Ptcb2 Igbt Temperature Sensor Short Cicrcuit;0x610F;24847;;;Battery;Nivel 1;Fusi_Battery_Thermal_System.c;DTC_BATTERY_THERMAL_SYSTEM_PTCB2_IGBT_TEMPERATURE_SENSOR_SHORT_CICRCUIT

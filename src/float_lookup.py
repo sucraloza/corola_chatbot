@@ -218,15 +218,17 @@ def lookup_float_value(value: str) -> Optional[str]:
 # Load lookup tables once when module is imported
 try:
     # Load the compact (original) lookup table
-    LOOKUP_COMPACT = pd.read_csv('data/float_lookup.csv')
+    # LOOKUP_COMPACT = pd.read_csv('data/float_lookup.csv')
+    LOOKUP_COMPACT = pd.read_csv(r'C:\Users\fnher\OneDrive\Escritorio\eu\laboral\Python\chatbot\data\float_lookup.csv')
     LOOKUP_COMPACT['input_value'] = LOOKUP_COMPACT['input_value'].astype(float)
     LOOKUP_COMPACT['return_value'] = LOOKUP_COMPACT['return_value'].astype(float)
     
     # Create and save extended table
-    save_extended_lookup_table(num_points=10)
+    # save_extended_lookup_table(num_points=10)
     
     # Load the extended lookup table
-    LOOKUP_TABLE = pd.read_csv('data/float_lookup_extended.csv')
+    # LOOKUP_TABLE = pd.read_csv('data/float_lookup_extended.csv')
+    LOOKUP_TABLE = pd.read_csv(r'C:\Users\fnher\OneDrive\Escritorio\eu\laboral\Python\chatbot\data\float_lookup_extended.csv')
     LOOKUP_TABLE['input_value'] = LOOKUP_TABLE['input_value'].astype(float)
     LOOKUP_TABLE['return_value'] = LOOKUP_TABLE['return_value'].astype(float)
     
@@ -243,14 +245,24 @@ if __name__ == "__main__":
     # plot_lookup_table("table_compact",show_segments=True)
 
     
-    # Original test values
-    print("\nTesting with original test values:")
-    test_values = ["3.247",	"3.242"]
-    
-    for value in test_values:
-        result = lookup_float_value(value)
-        if result is not None:  # This will work correctly even if result is 0
-            print(f"Input: {value} -> Return value: {result}")
-        else:
-            print(f"Input: {value} -> No valid result found")
+    # Test value sets
+    test_sets = [
+        # ("N19-1", ["3.277",	"3.256",	"3.274"]), # OK
+        # ("N19-3", ["3.295",	"3.282",	"3.293"]), # OK
+        ("NB17-3", ["3.264",	"3.225",	"3.260"]),
+        ("NB18-3", ["3.260",	"3.228",	"3.256"]),
+        # ("NB19-2", ["3.261",	"3.241",	"3.255"]),
+        ("NB19-3", ["3.266",	"3.234",	"3.262"]),
+        # ("NB18-4", ["3.285",	"3.270",	"3.274"]) # OK
+        
+    ]
+
+    for pack_name, test_values in test_sets:
+        print(f"\n{pack_name}:")
+        for value in test_values:
+            result = lookup_float_value(value)
+            if result is not None:  # This will work correctly even if result is 0
+                print(f"Input: {value} -> Return value: {result}")
+            else:
+                print(f"Input: {value} -> No valid result found")
 

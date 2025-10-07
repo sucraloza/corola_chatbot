@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 from collections import defaultdict, Counter
 import argparse
 
-def analyze_logs(log_dir='logs', days=1):
+def analyze_logs(log_dir='logs', days=2):
     """Analyze bot logs for the specified number of days."""
     
     # Get log files for the specified days
@@ -188,7 +188,7 @@ def generate_report(stats, days):
 
 def main():
     parser = argparse.ArgumentParser(description='Analyze Telegram Bot logs')
-    parser.add_argument('--days', type=int, default=1, help='Number of days to analyze (default: 1)')
+    parser.add_argument('--days', type=int, default=2, help='Number of days to analyze (default: 2)')
     parser.add_argument('--log-dir', default='logs', help='Log directory (default: logs)')
     
     args = parser.parse_args()

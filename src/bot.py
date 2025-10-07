@@ -97,6 +97,7 @@ def load_fault_codes():
         # Initialize separate dictionaries for each product
         q1_dict = {}
         q2_dict = {}
+        t2_dict = {}
         
         # Load Q1 product codes
         try:
@@ -105,12 +106,13 @@ def load_fault_codes():
             logging.info(f"Q1 CSV loaded: {len(df_q1)} rows")
         except Exception as e:
             logging.error(f"Failed to load Q1 CSV file: {str(e)}")
-            return {'Q1': {}, 'Q2': {}}
+            return {'Q1': {}, 'Q2': {}, 'T2': {}}
         
         # Process Q1 codes
         for idx, row in df_q1.iterrows():
             try:
                 entry = {
+                    'name': row['Name'],
                     'description': row['Descripcion Corta'],
                     'system': row['System'],
                     'level': row['Nivel'],
@@ -129,12 +131,13 @@ def load_fault_codes():
             logging.info(f"Q2 CSV loaded: {len(df_q2)} rows")
         except Exception as e:
             logging.error(f"Failed to load Q2 CSV file: {str(e)}")
-            return {'Q1': q1_dict, 'Q2': {}}
+            return {'Q1': q1_dict, 'Q2': {}, 'T2': {}}
         
         # Process Q2 codes
         for idx, row in df_q2.iterrows():
             try:
                 entry = {
+                    'name': row['Name'],
                     'description': row['Descripcion Corta'],
                     'system': row['System'],
                     'level': row['Nivel'],
@@ -146,10 +149,41 @@ def load_fault_codes():
                 logging.error(f"Error processing Q2 row {idx + 1}: {row_error}")
                 logging.error(f"Problematic row data: {row.to_dict()}")
         
+        # Load T2 product codes
+        try:
+            logging.info("Loading T2 product codes...")
+            df_t2 = pd.read_csv('data/DTC_T2.csv', delimiter=';', encoding='latin-1')
+            logging.info(f"T2 CSV loaded: {len(df_t2)} rows")
+        except Exception as e:
+            logging.error(f"Failed to load T2 CSV file: {str(e)}")
+            return {'Q1': q1_dict, 'Q2': q2_dict, 'T2': {}}
+        
+        # Process T2 codes
+        for idx, row in df_t2.iterrows():
+            try:
+                # T2: Use Macro Name as fallback if Descripcion Corta is empty
+                desc = row['Descripcion Corta']
+                if pd.isna(desc) or str(desc).strip() == '':
+                    desc = row['Macro Name']
+                
+                entry = {
+                    'name': row['Name'],
+                    'description': desc,
+                    'system': row['System'],
+                    'level': row['Nivel'],
+                    'product': 'T2'
+                }
+                t2_dict[row['Codigo'].upper()] = entry
+                t2_dict[str(row['Codigo Decimal'])] = entry
+            except Exception as row_error:
+                logging.error(f"Error processing T2 row {idx + 1}: {row_error}")
+                logging.error(f"Problematic row data: {row.to_dict()}")
+        
         logging.info(f"Total Q1 codes loaded: {len(q1_dict)}")
         logging.info(f"Total Q2 codes loaded: {len(q2_dict)}")
+        logging.info(f"Total T2 codes loaded: {len(t2_dict)}")
         logging.info("="*50)
-        return {'Q1': q1_dict, 'Q2': q2_dict}
+        return {'Q1': q1_dict, 'Q2': q2_dict, 'T2': t2_dict}
         
     except Exception as e:
         logging.error("="*50)
@@ -171,10 +205,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "<product> <code>\n\n"
         "Available products:\n"
         "- Q1\n"
-        "- Q2\n\n"
+        "- Q2\n"
+        "- T2\n\n"
         "Examples:\n"
         "Q1 16897\n"
-        "Q2 0x4201\n\n"
+        "Q2 0x4201\n"
+        "T2 14592\n\n"
         "For CATL float value lookup:\n"
         "CATL <value>\n"
         "Example: CATL 3.247\n\n"
@@ -194,13 +230,16 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "<product> <code>\n\n"
         "Available products:\n"
         "- Q1\n"
-        "- Q2\n\n"
+        "- Q2\n"
+        "- T2\n\n"
         "Examples:\n"
         "Q1 16897\n"
-        "Q2 0x4201\n\n"
+        "Q2 0x4201\n"
+        "T2 14592\n\n"
         "The bot will respond with:\n"
         "📝 Fault Code: The code you entered\n"
-        "🔍 Description: What the code means\n"
+        "📌 Name: Short name of the fault\n"
+        "🔍 Description: Detailed description\n"
         "⚙️ System: Which system the code belongs to\n"
         "⚠️ Severity: The severity level\n"
         "🏭 Product: The product you specified\n\n"
@@ -223,9 +262,10 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("No fault codes available at the moment.")
         return
     
-    # Create separate lists for Q1 and Q2 codes
+    # Create separate lists for Q1, Q2, and T2 codes
     q1_codes = []
     q2_codes = []
+    t2_codes = []
     
     # Process Q1 codes
     for code, info in fault_codes['Q1'].items():
@@ -237,9 +277,15 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if code.isdigit():  # Only show decimal codes to avoid duplicates
             q2_codes.append(f"{code} - {info['description']}")
     
+    # Process T2 codes
+    for code, info in fault_codes['T2'].items():
+        if code.isdigit():  # Only show decimal codes to avoid duplicates
+            t2_codes.append(f"{code} - {info['description']}")
+    
     # Sort the lists
     q1_codes.sort()
     q2_codes.sort()
+    t2_codes.sort()
     
     # Limit the number of codes shown
     max_codes = 5
@@ -250,6 +296,10 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if len(q2_codes) > max_codes:
         q2_codes = q2_codes[:max_codes]
         q2_codes.append(f"... and {len(fault_codes['Q2']) - max_codes} more Q2 codes")
+    
+    if len(t2_codes) > max_codes:
+        t2_codes = t2_codes[:max_codes]
+        t2_codes.append(f"... and {len(fault_codes['T2']) - max_codes} more T2 codes")
     
     # Create the response message
     codes_list = "Available fault codes:\n\n"
@@ -263,6 +313,12 @@ async def list_codes(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if q2_codes:
         codes_list += "Q2 Product Codes:\n"
         for code in q2_codes:
+            codes_list += f"{code}\n"
+        codes_list += "\n"
+    
+    if t2_codes:
+        codes_list += "T2 Product Codes:\n"
+        for code in t2_codes:
             codes_list += f"{code}\n"
     
     codes_list += "\nTo get detailed information about a specific code, send:\n"
@@ -342,10 +398,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "<product> <code>\n\n"
             "Available products:\n"
             "- Q1\n"
-            "- Q2\n\n"
+            "- Q2\n"
+            "- T2\n\n"
             "Examples:\n"
             "Q1 16897\n"
-            "Q2 0x4201\n\n"
+            "Q2 0x4201\n"
+            "T2 14592\n\n"
             "Or use CATL command:\n"
             "CATL 3.247"
         )
@@ -355,14 +413,16 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     product, code = parts
     
     # Validate product
-    if product not in ['Q1', 'Q2']:
+    if product not in ['Q1', 'Q2', 'T2']:
         response = (
             "❌ Invalid product. Please use one of the available products:\n"
             "- Q1\n"
-            "- Q2\n\n"
+            "- Q2\n"
+            "- T2\n\n"
             "Examples:\n"
             "Q1 16897\n"
-            "Q2 0x4201"
+            "Q2 0x4201\n"
+            "T2 14592"
         )
         await update.message.reply_text(response)
         return
@@ -379,6 +439,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         logging.info(f"FAULT_SUCCESS - Product: {product}, Code: {code} -> Found")
         response = (
             f"📝 Fault Code: {code}\n"
+            f"📌 Name: {fault_info['name']}\n"
             f"🔍 Description: {fault_info['description']}\n"
             f"⚙️ System: {fault_info['system']}\n"
             f"⚠️ Severity: {fault_info['level']}\n"
