@@ -31,6 +31,9 @@ class ColoredFormatter(logging.Formatter):
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+# Suppress noisy httpx logs (Telegram API requests)
+logging.getLogger("httpx").setLevel(logging.WARNING)
+
 # Clear existing handlers
 for handler in logger.handlers[:]:
     logger.removeHandler(handler)
@@ -521,6 +524,25 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(response)
 
+async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Handle errors gracefully and inform users."""
+    try:
+        # Log the error
+        logging.error(f"Exception while handling an update: {context.error}")
+        
+        # If we can respond to the user, send a friendly message
+        if update and update.effective_message:
+            error_message = (
+                "⚠️ Oops! Something went wrong.\n\n"
+                "The bot encountered an error while processing your request.\n"
+                "Please try again in a moment.\n\n"
+                "If the problem persists, contact support."
+            )
+            await update.effective_message.reply_text(error_message)
+    except Exception as e:
+        # If even the error handler fails, just log it
+        logging.error(f"Error in error_handler: {e}")
+
 def main():
     """Start the bot."""
     logging.info("="*50)
@@ -543,6 +565,10 @@ def main():
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("list", list_codes))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    
+    # Add error handler
+    application.add_error_handler(error_handler)
+    logging.info("BOT_STARTUP - Error handler registered")
 
     # Start the bot
     logging.info("BOT_STARTUP - Starting polling")
