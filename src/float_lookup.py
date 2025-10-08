@@ -3,6 +3,7 @@ import numpy as np
 from typing import Optional, List, Tuple
 import matplotlib.pyplot as plt
 from scipy import stats
+import os
 
 def generate_interpolated_points(x1: float, y1: float, x2: float, y2: float, num_points: int = 10) -> List[Tuple[float, float]]:
     """
@@ -217,18 +218,21 @@ def lookup_float_value(value: str) -> Optional[str]:
 
 # Load lookup tables once when module is imported
 try:
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Go up one level to the project root, then into data/
+    project_root = os.path.dirname(script_dir)
+    data_dir = os.path.join(project_root, 'data')
+    
     # Load the compact (original) lookup table
-    # LOOKUP_COMPACT = pd.read_csv('data/float_lookup.csv')
-    LOOKUP_COMPACT = pd.read_csv(r'C:\Users\fnher\OneDrive\Escritorio\eu\laboral\Python\chatbot\data\float_lookup.csv')
+    compact_path = os.path.join(data_dir, 'float_lookup.csv')
+    LOOKUP_COMPACT = pd.read_csv(compact_path)
     LOOKUP_COMPACT['input_value'] = LOOKUP_COMPACT['input_value'].astype(float)
     LOOKUP_COMPACT['return_value'] = LOOKUP_COMPACT['return_value'].astype(float)
     
-    # Create and save extended table
-    # save_extended_lookup_table(num_points=10)
-    
     # Load the extended lookup table
-    # LOOKUP_TABLE = pd.read_csv('data/float_lookup_extended.csv')
-    LOOKUP_TABLE = pd.read_csv(r'C:\Users\fnher\OneDrive\Escritorio\eu\laboral\Python\chatbot\data\float_lookup_extended.csv')
+    extended_path = os.path.join(data_dir, 'float_lookup_extended.csv')
+    LOOKUP_TABLE = pd.read_csv(extended_path)
     LOOKUP_TABLE['input_value'] = LOOKUP_TABLE['input_value'].astype(float)
     LOOKUP_TABLE['return_value'] = LOOKUP_TABLE['return_value'].astype(float)
     
@@ -249,7 +253,7 @@ if __name__ == "__main__":
     test_sets = [
         # ("N19-1", ["3.277",	"3.256",	"3.274"]), # OK
         # ("N19-3", ["3.295",	"3.282",	"3.293"]), # OK
-        ("NB17-3", ["3.264",	"3.225",	"3.260"]),
+        ("NB17-3", ["3.289",	"3.289",	"3.289"]),
         ("NB18-3", ["3.260",	"3.228",	"3.256"]),
         # ("NB19-2", ["3.261",	"3.241",	"3.255"]),
         ("NB19-3", ["3.266",	"3.234",	"3.262"]),
