@@ -8,6 +8,8 @@ Jarvis Can Command Send;0x4003;16387;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_C
 Jarvis Can Speed Recived;0x4004;16388;;;Jarvis;Nivel 1;Fusi_Jarvis.c;DTC_JARVIS_CAN_SPEED_RECIVED
 Jarvis Can Pressure Recived;0x4005;16389;;;Jarvis;Nivel 4;Fusi_Jarvis.c;DTC_JARVIS_CAN_PRESSURE_RECIVED
 Jarvis Can Throttle Recived;0x4006;16390;;;Jarvis;Nivel 5;Fusi_Jarvis.c;DTC_JARVIS_CAN_THROTTLE_RECIVED
+Jarvis Can Asr Recived;0x4007;16391;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_ASR_RECIVED
+Jarvis Can Asr Box Recived;0x4008;16392;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_ASR_BOX_RECIVED
 Air Leak;0x4100;16640;;;Air;Nivel 2;Fusi_Service_Air.c;DTC_AIR_LEAK
 Air Compressor Temp;0x4101;16641;;;Air;Nivel 2;Fusi_Service_Air.c;DTC_AIR_COMPRESSOR_TEMP
 Air Low Pressure;0x4102;16642;;;Air;Nivel 2;Fusi_Service_Air.c;DTC_AIR_LOW_PRESSURE
@@ -167,6 +169,23 @@ Bypass;0x5002;20482;;;PDU;Nivel 6;Fusi_PDU.c;DTC_BYPASS
 Welded;0x5003;20483;;;PDU;Nivel 6;Fusi_PDU.c;DTC_WELDED
 Precrarge;0x5004;20484;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PRECRARGE
 Discharge;0x5005;20485;;;PDU;Nivel 6;Fusi_PDU.c;DTC_DISCHARGE
+Pdu Circuits;0x5200;20992;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_PDU_CIRCUITS
+Hvil;0x5201;20993;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_HVIL
+Bcu Can;0x5202;20994;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_BCU_CAN
+Inverter Ign;0x5203;20995;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_INVERTER_IGN
+Inverter Can;0x5204;20996;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_INVERTER_CAN
+Battery Ready;0x5205;20997;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_BATTERY_READY
+Pdu Close;0x5206;20998;;;DC Link;Nivel 4;Fusi_DC_Link.c;DTC_PDU_CLOSE
+Inverter Standby;0x5207;20999;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_INVERTER_STANDBY
+Current Disable;0x5208;21000;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_CURRENT_DISABLE
+Pdu Open;0x5209;21001;;;DC Link;Nivel 5;Fusi_DC_Link.c;DTC_PDU_OPEN
+Battery Off;0x520A;21002;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_BATTERY_OFF
+Pdu Welded;0x520B;21003;;;DC Link;Nivel 5;Fusi_DC_Link.c;DTC_PDU_WELDED
+Dcu Disable;0x520C;21004;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_DCU_DISABLE
+Btms Disable;0x520D;21005;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_BTMS_DISABLE
+Heating Disable;0x520E;21006;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_HEATING_DISABLE
+Steering Disable;0x520F;21007;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_STEERING_DISABLE
+Ac Disable;0x5210;21008;;;DC Link;Nivel 2;Fusi_DC_Link.c;DTC_AC_DISABLE
 System Throttle Stuck;0x5300;21248;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_THROTTLE_STUCK
 System High Soc;0x5301;21249;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_HIGH_SOC
 System Dc Link Low Voltage;0x5302;21250;;;System;Nivel 6;Fusi_System.c;DTC_SYSTEM_DC_LINK_LOW_VOLTAGE
@@ -182,3 +201,5 @@ Over Voltage;0x5403;21507;;;AC;Nivel 1;Fusi_AC.c;DTC_OVER_VOLTAGE
 Under Voltage;0x5404;21508;;;AC;Nivel 1;Fusi_AC.c;DTC_UNDER_VOLTAGE
 Over Temperature;0x5405;21509;;;AC;Nivel 1;Fusi_AC.c;DTC_OVER_TEMPERATURE
 Comunication;0x5406;21510;;;AC;Nivel 1;Fusi_AC.c;DTC_COMUNICATION
+Asr Indicator;0x5600;22016;;;Unknown;Nivel 2;Fusi_ASR_REM.c;DTC_ASR_INDICATOR
+Asr Recovering;0x5601;22017;;;Unknown;Nivel 0;Fusi_ASR_REM.c;DTC_ASR_RECOVERING

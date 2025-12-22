@@ -6,6 +6,7 @@ config.py
 # Files
 *.png
 logs/
+files/*
 
 # Python
 __pycache__/
