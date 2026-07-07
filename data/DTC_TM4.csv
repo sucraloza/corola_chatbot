@@ -1,0 +1,367 @@
+﻿SysFile Entry Id;SysFile Entry (Description);Corrective action
+0x0000;Info - SysFile 0x00 - SysFile cleared | (The system file was cleared);( | ANA | ) No action related
+0x0001;Warning - SysFile 0x01 - Section size has been changed | (SysFile section size has been changed from previous software version);( | ANA | ) No action related
+0x0002;Warning - SysFile 0x02 - Data has not been read | (Data has not been read from non-volatile memory);( | ANA | ) No action related
+0x0003;Warning - SysFile 0x03 | (Warning related to the SysFile);( | ANA | ) No action related
+0x0004;Info - SysFile 0x04 - Data has been reset manually | (The SysFile data has been reset manually);( | ANA | ) No action related
+0x0005;Warning - SysFile 0x05 | (Warning related to the SysFile);( | ANA | ) No action related
+0x0006;Warning - SysFile 0x06 | (Warning related to the SysFile);( | ANA | ) No action related
+0x0007;Warning - SysFile 0x07 | (Warning related to the SysFile);( | ANA | ) No action related
+0x0008;Warning - SysFile 0x08 | (Warning related to the SysFile);( | ANA | ) No action related
+0x0009;Warning - SysFile 0x09 | (Warning related to the SysFile);( | ANA | ) No action related
+0x000A;Warning - SysFile 0x0A | (Warning related to the SysFile);( | ANA | ) No action related
+0x000B;Warning - SysFile 0x0B | (Warning related to the SysFile);( | ANA | ) No action related
+0x0300;Warning - Board 0x00 | (Warning related to the Board);( | ANA | ) No action related
+0x0301;Warning - Board 0x01 | (Warning related to the Board);( | ANA | ) No action related
+0x0302;Warning - Board 0x02 | (Warning related to the Board);( | ANA | ) No action related
+0x0303;Warning - Board 0x03 | (Warning related to the Board);( | ANA | ) No action related
+0x0304;Warning - Board 0x04 | (Warning related to the Board);( | ANA | ) No action related
+0x0305;Warning - Board 0x05 | (Warning related to the Board);( | ANA | ) No action related
+0x0306;Warning - Board 0x06 | (Warning related to the Board);( | ANA | ) No action related
+0x0307;Warning - Board 0x07 | (Warning related to the Board);( | ANA | ) No action related
+0x0308;Warning - Board 0x08 | (Warning related to the Board);( | ANA | ) No action related
+0x0309;Warning - Board 0x09 | (Warning related to the Board);( | ANA | ) No action related
+0x030A;Warning - Board 0x0A | (Warning related to the Board);( | ANA | ) No action related
+0x030B;Warning - Board 0x0B | (Warning related to the Board);( | ANA | ) No action related
+0x030C;Warning - Board 0x0C | (Warning related to the Board);( | ANA | ) No action related
+0x030D;Warning - Board 0x0D | (Warning related to the Board);( | ANA | ) No action related
+0x030E;Warning - Board 0x0E | (Warning related to the Board);( | ANA | ) No action related
+0x030F;Warning - Board 0x0F | (Warning related to the Board);( | ANA | ) No action related
+0x0310;Warning - Board 0x10 - Current sensors calibration failed | (Current sensors calibration failed (reference too far from the readings));( | ANA | ) No action related
+0x0311;Warning - Board 0x11 - High voltage sensor calibration failed | (High voltage sensor calibration failed (reference too far from the readings));( | ANA | ) No action related
+0x0312;Error - Board 0x12 - Incompatibility between software and hardware | (Error related to the Board);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0313;Warning - Board 0x13 - VAUX too low | (Warning Vaux to low.);( | ANA | ) No action related
+0x0314;Warning - Board 0x14 - VAUX too high | (Warning Vaux too high);( | ANA | ) No action related
+0x0315;Warning - Board 0x15 motor temp sensor shorted to -Vaux | (Warning motor temperature sensor has been shorted to -Vaux.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x0316;Warning - Board 0x16 motor temp sensor open or shorted to +Vaux | (Warning motor temperature sensor has been disconnected or shorted to +Vaux.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x0317;Error - Board 0x17 | (Error related to the Board.);( | ANA | ) No action related
+0x0318;Error - Board 0x18 | (Error related to the Board.);( | ANA | ) No action related
+0x0319;Error - Board 0x19 - Abnormal battery current condition as not operational | (Abnormal battery current condition as not operational);( | ANA | ) No action related
+0x0500;Info - Sequencer 0x00 - System reset occurred | (A manual or software reset of the system occurred);( | ANA | ) No action related
+0x0501;Error - Sequencer 0x01 | (Error related to the Sequencer module);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0502;Error - Sequencer 0x02 | (Error related to the Sequencer module);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0503;Error - Sequencer 0x03 | (Error related to the Sequencer module);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0504;Error - Sequencer 0x04 - Initialisation timed out | (Initialisation of motor control timed out);( | ANA | ) No action related
+0x0505;Error - Sequencer 0x05 - Invalid traction state | (Invalid Traction Control state);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0506;Error - Sequencer 0x06 - Motor control in wrong state | (Motor control is no longer in standby state);( | ANA | ) No action related
+0x0507;Error - Sequencer 0x07 - Activation failed | (Traction control activation sequence failed);( | ANA | ) No action related
+0x0508;Error - Sequencer 0x8 - Activation timed out | (Traction control activation sequence timed out);( | ANA | ) No action related
+0x0509;Error - Sequencer 0x09 - Motor control in wrong state | (Wrong Motor control state for operational neutral);( | ANA | ) No action related
+0x050A;Error - Sequencer 0x0A - Motor control in wrong state | (Wrong Motor control state for operational EV);( | ANA | ) No action related
+0x050B;Error - Sequencer 0x0B - Deactivation failed | (Traction control deactivation sequence failed);( | ANA | ) No action related
+0x050C;Error - Sequencer 0x0C - Deactivation timed out | (Traction control deactivation sequence timed out);( | ANA | ) No action related
+0x050D;Error - Sequencer 0x0D - System error | (An error occured in the system and the system control stopped);( | ANA | ) No action related
+0x050E;Error - Sequencer 0x0E | (Error related to the Sequencer module);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x050F;Error - Sequencer 0x0F - Calibration failed | (The calibration sequence failed);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x0510;Warning - Sequencer 0x1A - Save SAV data timed out | (Shutdown save savinfo sequence timed out);( | ANA | ) No action related
+0x0511;Warning - Sequencer 0x11 - Save SAV data failed | (Shutdown save savinfo sequence failed);( | ANA | ) No action related
+0x0512;Warning - Sequencer 0x12 | (Warning related to the Sequencer module);( | ANA | ) No action related
+0x0513;Warning - Sequencer 0x13 - Save SYSFILE timed out | (Shutdown save sysfile sequence timed out);( | ANA | ) No action related
+0x0514;Warning - Sequencer 0x14 - Save SYSFILE failed | (Shutdown save sysfile sequence failed);( | ANA | ) No action related
+0x0515;Warning - Sequencer 0x15 - Periodic SAV saving timed out | (Periodic save of MCU savinfo timed out);( | ANA | ) No action related
+0x0516;Warning - Sequencer 0x16 | (Warning related to the Sequencer module);( | ANA | ) No action related
+0x0517;Warning - Sequencer 0x17 - Periodic SAV saving failed | (Periodic save of MCU savinfo failed);( | ANA | ) No action related
+0x0518;Warning - Sequencer 0x18 | (Warning related to the Sequencer module);( | ANA | ) No action related
+0x0519;Warning - Sequencer 0x19 - Invalid periodic saving state | (Invalid Sav Periodic Save state);( | ANA | ) No action related
+0x051A;Warning - Sequencer 0x1A - CAN shutdown command not received in time | (Did not receive the CAN shutdown command before timeout);( | ANA | ) No action related
+0x051B;Error - Sequencer 0x1B - System reset failed | (Reset of system failed);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x051C;Error - Sequencer 0x1C - Motor control in wrong state | (Wrong Motor control state for operational GEN);( | ANA | ) No action related
+0x051D;Info - Sequencer 0x1D - System shutting down | (System shutting down);( | ANA | ) No action related
+0x051E;Warning - Sequencer 0x1E - Timeout discharging battery at shutdown | (Unable to discharge battery at shutdown);( | ANA | ) No action related
+0x051F;Info - Sequencer 0x1F - System going into ready to power off state | (System going into ready to power off state);( | ANA | ) No action related
+0x1000;Error - NvdGlobalSection #1 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x1001;Error - NvdGlobalSection #2 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x1002;Error - NvdGlobalSection #3 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x1003;Error - NvdGlobalSection #4 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x1004;Error - NvdGlobalSection #5 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x1005;Error - NvdGlobalSection #6 | (Error related to the NvdGlobalSection.);( | ANA | ) No action related
+0x1006;Error - NvdGlobalSection #7 | (Error related to the NvdGlobalSection.);( | ANA | ) No action related
+0x1007;Warning - NvdGlobalSection #8 | (Warning related to the NvdGlobalSection.);( | ANA | ) No action related
+0x1008;Warning - NvdGlobalSection #9 | (Warning related to the NvdGlobalSection.);( | ANA | ) No action related
+0x1009;Error - NvdGlobalSection #10 | (Error related to the NvdGlobalSection.);( | AIN1 | ) Change inverter unit
+0x100A;Warning - NvdGlobalSection #11 | (Warning related to the NvdGlobalSection.);( | ANA | ) No action related
+0x100B;Warning - NvdGlobalSection #12 | (Warning related to the NvdGlobalSection.);( | ANA | ) No action related
+0x1100;Error - NvdProtectedSection 0x00 | (Error related to the NvdProtectedSection);( | AIN1 | ) Change inverter unit
+0x1101;Error - NvdProtectedSection 0x01 | (Error related to the NvdProtectedSection);( | AIN1 | ) Change inverter unit
+0x1102;Error - NvdProtectedSection 0x02 | (Error related to the NvdProtectedSection);( | ANA | ) No action related
+0x1103;Error - NvdProtectedSection 0x03 | (Error related to the NvdProtectedSection);( | ANA | ) No action related
+0x1104;Warning - NvdProtectedSection 0x04 | (Warning related to the NvdProtectedSection);( | ANA | ) No action related
+0x1105;Warning - NvdProtectedSection 0x05 | (Warning related to the NvdProtectedSection);( | ANA | ) No action related
+0x1106;Error - NvdProtectedSection 0x06 - Data has not been read | (Data has not been read from non-volatile memory);( | AIN1 | ) Change inverter unit
+0x1107;Warning - NvdProtectedSection 0x07 | (Warning related to the NvdProtectedSection);( | ANA | ) No action related
+0x1108;Warning - NvdProtectedSection 0x08 | (Warning related to the NvdProtectedSection);( | ANA | ) No action related
+0x1109;Warning - NvdProtectedSection 0x09 - New items were added | (Some new items were added and set to default values);( | ANA | ) No action related
+0x1200;Error - ParamDrv 0x00 | (Error related to the ParamDrv);( | AIN1 | ) Change inverter unit
+0x1201;Error - ParamDrv 0x01 | (Error related to the ParamDrv);( | AIN1 | ) Change inverter unit
+0x1202;Error - ParamDrv 0x02 - Loading failed | (Failed to load parameters section from inverter non-volatile memory);( | ANA | ) No action related
+0x1203;Error - ParamDrv 0x03 - Saving failed | (Failed to save parameters section to inverter non-volatile memory);( | ANA | ) No action related
+0x1204;Warning - ParamDrv 0x04 - Parameter(s) removed | (One or more parameters are not used anymore and have been deleted from non-volatile memory);( | ANA | ) No action related
+0x1205;Warning - ParamDrv 0x05 | (Warning related to the ParamDrv);( | ANA | ) No action related
+0x1206;Error - ParamDrv 0x06 - Data has not been read | (Data has not been read from non-volatile memory);( | AIN1 | ) Change inverter unit
+0x1207;Error - ParamDrv 0x07 - Some parameters need to be configured | (Some parameters were set to invalid values and need to be configured);( | ACS1 | ) Update inverter software
+0x1208;Warning - ParamDrv 0x08 - New parameters added with default values | (Some new parameters were added and set to default values);( | ANA | ) No action related
+0x1209;Info - ParamDrv 0x09 - All parameters reset to default values | (All parameters values have been reset to their default values);( | ANA | ) No action related
+0x120A;Error - ParamDrv 0x0A - Invalid phase calibration | (Invalid phase calibration. Please launch the calibration process or enter a good phase value.);( | APC1 | ) Verify or change the inverter and/or machine parameters | ( | APC2 | ) Perform machine phase calibration | ( | AIN1 | ) Change inverter unit
+0x120B;Info - ParamDrv 0x0B - Parameter identifiers converted to global ID | (Parameters identifiers translated to global ParamDrv ID);( | ANA | ) No action related
+0x1300;Warning - NvdSavSection 0x00 | (Warning related to the NvdSavSection);( | ANA | ) No action related
+0x1301;Warning - NvdSavSection 0x01 | (Warning related to the NvdSavSection);( | ANA | ) No action related
+0x1302;Warning - NvdSavSection 0x02 - Loading failed | (Failed to load data section);( | ANA | ) No action related
+0x1303;Warning - NvdSavSection 0x03 - Saving failed | (Failed to save data section);( | ANA | ) No action related
+0x1304;Warning - NvdSavSection 0x04 - Items removed | (One or more parameters are not used anymore and have been deleted from non-volatile memory);( | ANA | ) No action related
+0x1305;Warning - NvdSavSection 0x05 | (Warning related to the NvdSavSection);( | ANA | ) No action related
+0x1306;Warning - NvdSavSection 0x06 - Data has not been read | (Data has not been read from non-volatile memory);( | ANA | ) No action related
+0x1307;Info - NvdSavSection 0x07 - New parameters added with default values | (Some new items were added and set to default values);( | ANA | ) No action related
+0x1800;Warning - StorageMgr 0x00 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1801;Warning - StorageMgr 0x01 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1802;Warning - StorageMgr 0x02 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1803;Warning - StorageMgr 0x03 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1804;Warning - StorageMgr 0x04 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1805;Warning - StorageMgr 0x05 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1806;Warning - StorageMgr 0x06 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1807;Warning - StorageMgr 0x07 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1808;Warning - StorageMgr 0x08 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1809;Warning - StorageMgr 0x09 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180A;Warning - StorageMgr 0x0A | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180B;Warning - StorageMgr 0x0B | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180C;Warning - StorageMgr 0x0C | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180D;Warning - StorageMgr 0x0D | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180E;Warning - StorageMgr 0x0E | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x180F;Warning - StorageMgr 0x0F | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1810;Warning - StorageMgr 0x10 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1811;Warning - StorageMgr 0x11 - Write to non-volatile memory is deactivated | (Write to non-volatile memory is temporarily deactivated - possible cause may be VAUX too low);( | ANA | ) No action related
+0x1812;Warning - StorageMgr 0x12 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1813;Warning - StorageMgr 0x13 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1814;Warning - StorageMgr 0x14 | (Warning related to the StorageMgr);( | ANA | ) No action related
+0x1815;Info - StorageMgr 0x15 - All data in EEPROM has been re-written | (All data in EEPROM has been refreshed);( | ANA | ) No action related
+0x2200;Warning - ParamMac 0x00 | (Warning related to ParamMac);( | ANA | ) No action related
+0x2201;Warning - ParamMac 0x01 | (Warning related to ParamMac);( | ANA | ) No action related
+0x2202;Warning - ParamMac 0x02 - Loading failed (previous will be used) | (Failed to load parameters section from motor memory - Previous motor parameter data will be used);( | ANA | ) No action related
+0x2203;Warning - ParamMac 0x03 - Saving failed | (Failed to save parameters section to motor memory);( | ANA | ) No action related
+0x2204;Warning - ParamMac 0x04 - Parameter(s) removed | (One or more parameters are not used anymore and have been deleted from non-volatile memory);( | ANA | ) No action related
+0x2205;Warning - ParamMac 0x05 | (Warning related to ParamMac);( | ANA | ) No action related
+0x2206;Warning - ParamMac 0x06 - Some parameters need to be configured | (Some parameters were set to invalid values and need to be configured);( | ANA | ) No action related
+0x2207;Warning - ParamMac 0x07 - New parameters added with default values | (Some new parameters were added and set to default values);( | ANA | ) No action related
+0x2208;Info - ParamMac 0x08 - All parameters reset to default values | (All parameters values have been reset to their default values);( | ANA | ) No action related
+0x2209;Error - ParamMac 0x09 - Unsupported motor hardware version | (Error related to hardware motor version stored in motor EEPROM);( | ANA | ) No action related
+0x2900;Warning - UdsCustomerInfoSection #1 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2901;Warning - UdsCustomerInfoSection #2 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2902;Warning - UdsCustomerInfoSection #3 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2903;Warning - UdsCustomerInfoSection #4 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2904;Warning - UdsCustomerInfoSection #5 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2905;Warning - UdsCustomerInfoSection #6 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2906;Warning - UdsCustomerInfoSection #7 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x2907;Warning - UdsCustomerInfoSection #10 | (Warning related to the UdsCustomerInfoSection.);( | ANA | ) No action related
+0x3100;Warning - Motor Control Inverter 0x00 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3101;Warning - Motor Control Inverter 0x01 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3102;Warning - Motor Control Inverter 0x02 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3103;Warning - Motor Control Inverter 0x03 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3104;Warning - Motor Control Inverter 0x04 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3105;Warning - Motor Control Inverter 0x05 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3106;Warning - Motor Control Inverter 0x06 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3107;Warning - Motor Control Inverter 0x07 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3108;Warning - Motor Control Inverter 0x08 | (Warning related to the MotorControl);( | ANA | ) No action related
+0x3109;Error - Motor Control Inverter 0x09 - Position sensor hardware fault | (Position sensor hardware fault);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x310A;Error - Motor Control Inverter 0x0A - High power battery voltage reached the low limit | (The voltage of high power battery reached the low limit);( | AMS2 | ) Verify the high-voltage battery chain | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x310B;Error - Motor Control Inverter 0x0B - High power battery voltage reached the high limit | (The voltage of high power battery reached the high limit);( | AMS2 | ) Verify the high-voltage battery chain | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x310C;Error - Motor Control Inverter 0x0C - High power battery voltage reached the high limit (H/W detection) | (The voltage of high power battery reached the high limit - HW detection);( | AMS2 | ) Verify the high-voltage battery chain | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x310D;Error - Motor Control Inverter 0x0D - Temperature too high | (A MCU internal component temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x310E;Error - Motor Control Inverter 0x0E - Temperature too high | (A MCU internal component temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x310F;Error - Motor Control Inverter 0x0F - Temperature too high | (MCU internal temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x3110;Error - Motor Control Inverter 0x10 - Temperature too high | (A MCU internal component temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x3111;Error - Motor Control Inverter 0x11 - Invalid command | (Invalid command in motor control interface);( | ACS1 | ) Update inverter software
+0x3112;Error - Motor Control Inverter 0x12 - Temperature too high | (A MCU internal component temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x3113;Warning - Motor Control Inverter 0x13 - Back EMF Motor reduction mechanism activated (phases are short-circuited) | (Motor Back EMF reduction action initiated);( | ACS1 | ) Update inverter software
+0x3200;Error - Motor Control Machine 0x00 - MCU phase #1 current reached the maximum | (The MCU phase #1 current reached the maximum limit);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3201;Error - Motor Control Machine 0x01 - MCU phase #2 current reached the maximum | (The MCU phase #2 current reached the maximum limit);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3202;Error - Motor Control Machine 0x02 - MCU phase #3 current reached the maximum | (The MCU phase #3 current reached the maximum limit);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3203;Warning - Motor Control Machine 0x03 - Sum of MCU phase #1_2_3 currents exceeds maximum limit | (The MCU phase #1_2_3 current sum reached the maximum limit);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3204;Error - Motor Control Machine 0x04 - MCU phase #4 current reached the maximum | (The MCU phase #4 current reached the maximum limit);( | ANA | ) No action related
+0x3205;Error - Motor Control Machine 0x05 - MCU phase #5 current reached the maximum | (The MCU phase #5 current reached the maximum limit);( | ANA | ) No action related
+0x3206;Error - Motor Control Machine 0x06 - MCU phase #6 current reached the maximum | (The MCU phase #6 current reached the maximum limit);( | ANA | ) No action related
+0x3207;Warning - Motor Control Machine 0x07 - Sum of MCU phase #4_5_6 currents exceeds maximum limit | (The MCU phase #4_5_6 current sum reached the maximum limit);( | ANA | ) No action related
+0x3208;Error - Motor Control Machine 0x08 - MCU phase #7 current reached the maximum | (The MCU phase #7 current reached the maximum limit);( | ANA | ) No action related
+0x3209;Error - Motor Control Machine 0x09 - MCU phase #8 current reached the maximum | (The MCU phase #8 current reached the maximum limit);( | ANA | ) No action related
+0x320A;Error - Motor Control Machine 0x0A - MCU phase #9 current reached the maximum | (The MCU phase #9 current reached the maximum limit);( | ANA | ) No action related
+0x320B;Warning - Motor Control Machine 0x0B - Sum of MCU phase #7_8_9 currents exceeds maximum limit | (The MCU phase #7_8_9 current sum reached the maximum limit);( | ANA | ) No action related
+0x320C;Error - Motor Control Machine 0x0C | (Error related to the MotorControl);( | AWN1 | ) Maximum speed has been reached | ( | ACP*1 | ) Verify cooling system | ( | APC2 | ) Perform machine phase calibration | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x320D;Error - Motor Control Machine 0x0D | (Error related to the MotorControl);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | APC2 | ) Perform machine phase calibration | ( | AMS2 | ) Verify the high-voltage battery chain | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x320E;Error - Motor Control Machine 0x0E - Insulation to chassis fault | (Insulation to chassis fault - one or more phase cable is shorted to the chassis);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | AMS3 | ) Verify the insulation to chassis | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x320F;Error - Motor Control Machine 0x0F - Motor temperature | (A motor internal component temperature reached the maximum limit);( | ACP*1 | ) Verify cooling system | ( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3210;Error - Motor Control Machine 0x10 - Speed reached its limit in forward direction | (The forward motor rotation speed reached the maximum limit based on high voltage level and system temperature);( | AWN1 | ) Maximum speed has been reached | ( | APC1 | ) Verify or change the inverter and/or machine parameters | ( | ACP*1 | ) Verify cooling system
+0x3211;Error - Motor Control Machine 0x11 - Speed reached its limit in backward direction | (The backward motor rotation speed reached the maximum limit based on high voltage level and system temperature);( | AWN1 | ) Maximum speed has been reached | ( | APC1 | ) Verify or change the inverter and/or machine parameters | ( | ACP*1 | ) Verify cooling system
+0x3212;Error - Motor Control Machine 0x12 - Invalid motor phase | (The motor phase calibration value is out of range);( | APC2 | ) Perform machine phase calibration | ( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3300;Error - Application 0x00 | (Error related to the general system);( | ACS1 | ) Update inverter software
+0x3301;Error - Application in Safe Mode | (Problem with drive non-volatile data);( | APC2 | ) Perform machine phase calibration | ( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3302;Error - Application 0x02 | (Problem with non-volatile data);( | APC2 | ) Perform machine phase calibration | ( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x3303;Error - Application 0x03 | (Error related to the general system);( | ACS1 | ) Update inverter software
+0x3304;Error - Application 0x04 | (Error related to the general system);( | ACS1 | ) Update inverter software
+0x3305;Info - System power-up | (System power-up);( | ANA | ) No action related
+0x3306;Info - System set default blackbox registers | (System set default blackbox registers);( | ANA | ) No action related
+0x3307;warning - Invalid Motor Hardware Version | (Invalid Motor Hardware);( | ACS1 | ) Update inverter software
+0x3308;Info - Param Mac Updated | (Param Mac Updated);( | ANA | ) No action related
+0x3309;Info - Old blackbox configuration | (Blackbox configuration was set with previous software version);( | ANA | ) No action related
+0x330A;Error - Missing ressource or corruption | (Internal software error);( | ACS1 | ) Update inverter software
+0x330B;Info - Application ADC synchronization | (Error related to the ADC synchronization);( | ACS1 | ) Update inverter software
+0x330C;Error - Invalid Motor current sensor type | (Invalid Motor current sensors type specified in drive non-volatile data);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x330D;Error - Sw and Fc Mismatch MV HV | (Software and Feature Code Mismatch MV HV);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x330E;warning - Sw and Fc Mismatch BusDcCapacitor | (Software and Feature Code Mismatch BusDcCapacitor);( | ACS1 | ) Update inverter software | ( | AIN1 | ) Change inverter unit
+0x330F;Warning - Application 0x0F | (Warning related to the general system);( | ACS1 | ) Update inverter software
+0x3310;Warning - Application 0x10 | (Warning related to the general system);( | ACS1 | ) Update inverter software
+0x3400;Warning - Resolver #1 - Parity error | (Parity error in communication with decoder chip);( | ANA | ) No action related
+0x3401;Warning - Resolver #2 - Abnormal signals | (Resolver square sum of signal is invalid);( | ANA | ) No action related
+0x3402;Warning - Resolver #3 - Broken cos line | (Resolver cos line disconnection detected);( | ANA | ) No action related
+0x3403;Warning - Resolver #4 - Broken sin line | (Resolver sin line disconnection detected);( | ANA | ) No action related
+0x3404;Warning - Resolver #5 - Abnormal conversion | (Resolver decoder chip PLL error);( | ANA | ) No action related
+0x3405;Warning - Resolver #6 - Resolver high temperature | (Resolver temperature reached the maximum limit);( | ANA | ) No action related
+0x3406;Warning - Resolver #7 - Delta angle too high | (Resolver measurement results in a delta angle too high);( | ANA | ) No action related
+0x3407;Warning - Resolver #8 - Resolver errHld pin raised | (Resolver hardware error detected);( | ANA | ) No action related
+0x3408;Error - Resolver #9 - Position sensor module error | (Position sensor module is in error);( | ANA | ) No action related
+0x3500;Warning - One-Wire EEPROM Driver 0x00 - Device presence not detected | (Device presence not detected - cannot communicate with motor memory);( | ANA | ) No action related
+0x3501;Warning - One-Wire EEPROM Driver 0x01 | (Warning related to the motor EEPROM reader);( | ANA | ) No action related
+0x3502;Warning - One-Wire EEPROM Driver 0x02 | (Warning related to the motor EEPROM reader);( | ANA | ) No action related
+0x3503;Warning - One-Wire EEPROM Driver 0x03 | (Warning related to the motor EEPROM reader);( | ANA | ) No action related
+0x3504;Warning - One-Wire EEPROM Driver 0x04 | (Warning related to the motor EEPROM reader);( | ANA | ) No action related
+0x4000;Error - ComClient 0x00 - No CAN mailbox are available for the adapter to use | (Error related to the communication protocol);( | ANA | ) No action related
+0x4001;Warning - ComClient 0x01 - VmuCommandSafety TorqueCommand is out of range | (VmuCommandSafety TorqueCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4002;Warning - ComClient 0x02 - VmuCommandSafety SpeedCommand is out of range | (VmuCommandSafety SpeedCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4003;Warning - ComClient 0x03 - VmuCommandSafety CommandMode is invalid | (VmuCommandSafety CommandMode is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4004;Warning - ComClient 0x04 - VmuCommand2 TorqueCommand is out of range | (VmuCommand2 TorqueCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4005;Warning - ComClient 0x05 - VmuCommand2 SpeedCommand is out of range | (VmuCommand2 SpeedCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4006;Warning - ComClient 0x06 - VmuCommand2 CommandMode is invalid | (VmuCommand2 CommandMode is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4007;Warning - ComClient 0x07 - VmuCommand2 OperationalMode is invalid | (VmuCommand2 OperationalMode is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4008;Warning - ComClient 0x08 - VmuCommand1 OperationRequest is invalid | (VmuCommand1 OperationRequest is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4009;Warning - ComClient 0x09 - VmuCommand1 MinBatteryVoltage voltage is out of range | (VmuCommand1 MinBatteryVoltage voltage is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x400A;Warning - ComClient 0x0A - VmuCommand1 MaxBatteryVoltage voltage is out of range | (VmuCommand1 MaxBatteryVoltage voltage is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x400B;Warning - ComClient 0x0B - VmuCommand1 MaxDischargeCurrent is out of range | (VmuCommand1 MaxDischargeCurrent is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x400C;Warning - ComClient 0x0C - VmuCommand1 MaxChargeCurrent is out of range | (VmuCommand1 MaxChargeCurrent is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x400D;"Warning - ComClient 0x0D - Safety check; delta too high between CommandMode | (There is a difference in CommandMode in messages VmuCommand2 and VmuCommandSafety)";( | ANA | ) No action related
+0x400E;"Warning - ComClient 0x0E - Safety check; delta too high between SpeedCommand | (There is a significant difference in SpeedCommand in messages VmuCommand2 and VmuCommandSafety)";( | ANA | ) No action related
+0x400F;"Warning - ComClient 0x0F - Safety check; delta too high between TorqueCommand | (There is a significant difference in TorqueCommand in messages VmuCommand2 and VmuCommandSafety)";( | ANA | ) No action related
+0x4010;Warning - ComClient 0x10 - The library cannot decode the received data | (An unknown message has been received);( | ANA | ) No action related
+0x4011;Warning - ComClient 0x11 - A message received had the wrong DLC | (One of the protocol message was received with the wrong DLC);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4012;Info - ComClient 0x12 - System boot number received | (System boot number received);( | ANA | ) No action related
+0x4013;Warning - ComClient 0x13 - VmuCommand1 timeout | (VmuCommand1 timeout - message has not been received within CAN protocol timeout specification);( | ACB2 | ) Verify the CAN cabling and termination between the VMU and the inverter | ( | ACP2 | ) Verify the VMU CAN message functionality | ( | AIN1 | ) Change inverter unit
+0x4014;Warning - ComClient 0x14 - VmuCommand2 timeout | (VmuCommand2 timeout - message has not been received within CAN protocol timeout specification);( | ACB2 | ) Verify the CAN cabling and termination between the VMU and the inverter | ( | ACP2 | ) Verify the VMU CAN message functionality | ( | AIN1 | ) Change inverter unit
+0x4015;Warning - ComClient 0x15 - VmuCommandSafety timeout | (VmuCommandSafety timeout - message has not been received within CAN protocol timeout specification);( | ACB2 | ) Verify the CAN cabling and termination between the VMU and the inverter | ( | ACP2 | ) Verify the VMU CAN message functionality | ( | AIN1 | ) Change inverter unit
+0x4016;Warning - ComClient 0x16 - Transmission Fifo is full | (Error related to the communication protocol);( | ANA | ) No action related
+0x4017;Warning - ComClient 0x17 - A NACK was received after polling the VMU boot number. | (NACK received after polling the VMU boot number.);( | ANA | ) No action related
+0x4018;Warning - ComClient 0x18 - Invalid polling request ID | (Invalid polling request ID);( | ANA | ) No action related
+0x4019;Warning - ComClient 0x19 - An invalid message ID has been asked for encoding. | (Error related to the communication protocol);( | ANA | ) No action related
+0x401A;Warning - ComClient 0x1A - Invalid data was detected while encoding the McuCommand1Response | (Invalid data was detected while encoding the McuCommand1Response);( | ANA | ) No action related
+0x401B;Warning - ComClient 0x1B - Invalid data was detected while encoding the McuCommand1Response | (Invalid data was detected while encoding the McuCommand2Response);( | ANA | ) No action related
+0x401C;"Warning - ComClient 0x1C - Safety check; delta too high between VoltageCommand | (There is a significant difference in VoltageCommand in messages VmuCommand2 and VmuCommandSafety)";( | ANA | ) No action related
+0x401D;Warning - ComClient 0x1D - One of the temperatures sent with the Extension Pack v4.0 is invalid. | (One of the temperatures sent with the Extension Pack v4.0 is invalid.);( | ANA | ) No action related
+0x401E;Warning - ComClient 0x1E - Some events were not sent through CAN... Check Sysfile. | (Some events were not sent through CAN... Check Sysfile.);( | ANA | ) No action related
+0x401F;Warning - ComClient 0x1F - A message received had a bad checksum | (One of the protocol message was received with bad checksum value);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4020;Warning - ComClient 0x20 - Not direct encoding value. | (Not direct encoding. Value might be out of encoding range.);( | ANA | ) No action related
+0x4021;Warning - ComClient 0x21 - VAUX data invalid | (Auxiliary voltage value is out of encoding range.);( | ANA | ) No action related
+0x4022;Warning - ComClient 0x22 - High power voltage data invalid | (High power voltage value is out of encoding range.);( | ANA | ) No action related
+0x4023;Warning - ComClient 0x23 - High power current data invalid | (High power current value is out of encoding range.);( | ANA | ) No action related
+0x4100;Warning - CAN RX: Reception timeout | (Timeout occurred on Command1 or Command2 or CommandSafety message.);( | ANA | ) No action related
+0x4101;Warning - CAN RX: Torque command is out of range | (torque command is out of range);( | ANA | ) No action related
+0x4102;Warning - CAN RX: Speed command is out of range | (speed command is out of range);( | ANA | ) No action related
+0x4103;Warning - CAN RX: Command mode is invalid | (command mode is invalid);( | ANA | ) No action related
+0x4104;Warning - CAN RX: Operational mode is invalid | (operational mode is invalid);( | ANA | ) No action related
+0x4105;Warning - CAN RX: Operational request is invalid | (operational request is invalid);( | ANA | ) No action related
+0x4106;Warning - CAN RX: Minimum battery voltage is out of range | (minimum battery voltage is out of range);( | ANA | ) No action related
+0x4107;Warning - CAN RX: Maximum battery voltage is out of range | (maximum battery voltage is out of range);( | ANA | ) No action related
+0x4108;Warning - CAN RX: Maximum battery discharge current is out of range | (maximum battery discharge current is out of range);( | ANA | ) No action related
+0x4109;Warning - CAN RX: Maximum battery charge current is out of range | (maximum battery charge current is out of range);( | ANA | ) No action related
+0x410A;Warning - ComClient #8 | (Error related to the communication protocol);( | ANA | ) No action related
+0x410B;Warning - CAN RX: A message received had the wrong DLC | (One of the protocol message was received with the wrong DLC);( | ANA | ) No action related
+0x410C;Info - System boot number received | (System boot number received);( | ANA | ) No action related
+0x410D;Warning - CAN RX: Speed command status is invalid. | (Warning the received speed command status is invalid);( | ANA | ) No action related
+0x410E;Warning - CAN RX: VmuSlowCommand timeout | (Timeout occurred on VmuSlowCommand message.);( | ANA | ) No action related
+0x410F;Warning - CAN RX: VmuFastCommand timeout | (Timeout occurred on VmuFastCommand message.);( | ANA | ) No action related
+0x4110;Warning - CAN RX: VmuFastCommand wrong checksum | (Calculated checksum is not the same as the one received in the VmuFastCommand message.);( | ANA | ) No action related
+0x4111;Warning - CAN RX: VmuFastCommand rolling counter not changing | (The fast command rolling counter is not changing.);( | ANA | ) No action related
+0x4112;Warning - CAN RX: VmuSlowCommand rolling counter not changing | (The slow command rolling counter is not changing.);( | ANA | ) No action related
+0x4113;Warning - CAN RX: Voltage command is out of range | (Voltage command is out of range);( | ANA | ) No action related
+0x4200;Warning - NvdBlackboxSection #1 | (Warning related to the NvdBlackboxSection);( | ANA | ) No action related
+0x4201;Warning - NvdBlackboxSection #2 - Failed to save | (Failed to save triggered blackbox in the non-volatile memory);( | ANA | ) No action related
+0x4202;Warning - NvdBlackboxSection #3 - Failed to save | (Failed to save triggered blackbox in the non-volatile memory because of timeout);( | ANA | ) No action related
+0x4203;Warning - NvdBlackboxSection #4 - Timeout to transfer blackbox | (Timeout to transfer blackbox data to ODIN);( | ANA | ) No action related
+0x4204;Warning - NvdBlackboxSection #5 - Failed to transfer blackbox | (Failed to transfer blackbox data to ODIN);( | ANA | ) No action related
+0x4205;Info - NvdBlackboxSection #6 - BlackBox data has been reset | (BlackBox data has been reset);( | ANA | ) No action related
+0x4206;Info - NvdBlackboxSection #7 - BlackBox trigger has been satisfied | (BlackBox trigger has been satisfied - Blackbox data will be saved in non-volatile memory);( | ANA | ) No action related
+0x4207;Warning - NvdBlackboxSection #8 - Saving failed | (Failed to save data section);( | ANA | ) No action related
+0x4208;Warning - NvdBlackboxSection #9 - Loading failed | (Failed to load data section);( | ANA | ) No action related
+0x4209;Warning - NvdBlackboxSection #10 | (Warning related to the NvdBlackboxSection);( | ANA | ) No action related
+0x420A;Info - NvdBlackboxSection #11 - Size has been change | (Blackbox section size has been changed from previous software version);( | ANA | ) No action related
+0x420B;Warning - NvdBlackboxSection #12 | (Warning related to the NvdBlackboxSection);( | ANA | ) No action related
+0x420C;Warning - NvdBlackboxSection #13 - Data has not been read from non-volatile memory | (Data has not been read from non-volatile memory);( | ANA | ) No action related
+0x4400;Info - DTC cleared | (DTCs has been cleared using UDS Clear Diagnostic Information (0x14));( | ANA | ) No action related
+0x4700;Info - GDMGR 0x00 - tolerance delay elapsed: torque ramp down initiated | (Tolerance delay elapsed: torque ramp down initiated);( | ANA | ) No action related
+0x4701;Info - GDMGR 0x01 - tolerance delay elapsed: creep torque reached | (Tolerance delay elapsed: creep torque reached);( | ANA | ) No action related
+0x4702;Info - GDMGR 0x02 - tolerance delay elapsed: entered limp home mode | (Tolerance delay elapsed: entered limp home mode);( | ANA | ) No action related
+0x4703;Error - GDMGR 0x03 - CAN communication error | (CAN communication error: verify previous warnings);( | ANA | ) No action related
+0x4800;Info - PositionSensorGD 0x00 - Position sensor error: Torque ramp down initiated | (Position sensor error: Torque ramp down initiated);( | ANA | ) No action related
+0x4801;Error - PositionSensorGD 0x01 - Position sensor error | (Position sensor error: verify previous warnings);( | ANA | ) No action related
+0x4900;Error - Higer ComClient 0x00 - No CAN mailbox are available for the adapter to use | (Error related to the communication protocol);( | ANA | ) No action related
+0x4901;Warning - Higer ComClient 0x01 - VmuCommand TorqueCommand is out of range | (VmuCommand TorqueCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4902;Warning - Higer ComClient 0x02 - VmuCommand SpeedCommand is out of range | (VmuCommand2 SpeedCommand is out of range);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4903;Warning - Higer ComClient 0x03 - VmuCommand OperationRequest is invalid | (VmuCommand1 OperationRequest is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4904;Warning - Higer ComClient 0x04 - The library cannot decode the received data | (An unknown message has been received);( | ANA | ) No action related
+0x4905;Warning - Higer ComClient 0x05 - A message received had the wrong DLC | (One of the protocol message was received with the wrong DLC);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4906;Warning - Higer ComClient 0x06 - VmuCommand timeout | (VmuCommand timeout - message has not been received within CAN protocol timeout specification);( | ACB2 | ) Verify the CAN cabling and termination between the VMU and the inverter | ( | ACP2 | ) Verify the VMU CAN message functionality | ( | AIN1 | ) Change inverter unit
+0x4907;Warning - Higer ComClient 0x07 - VmuCommand working mode is invalid. | (VmuCommand working mode is invalid.);( | ANA | ) No action related
+0x4908;Warning - Higer ComClient 0x08 - VmuCommand controlled direction is invalid. | (VmuCommand controlled direction is invalid.);( | ANA | ) No action related
+0x4909;Warning - Higer ComClient 0x09 - Transmission Fifo is full | (Error related to the communication protocol);( | ANA | ) No action related
+0x490A;Warning - Higer ComClient 0x0A - An invalid message ID has been asked for encoding. | (Error related to the communication protocol);( | ANA | ) No action related
+0x490B;Warning - Higer ComClient 0x0B - Invalid data was detected while encoding the torque message | (Invalid data was detected while encoding the torque message);( | ANA | ) No action related
+0x490C;Warning - Higer ComClient 0x0C - Invalid data was detected while encoding the voltage message | (Invalid data was detected while encoding the voltage message);( | ANA | ) No action related
+0x490D;Warning - Higer ComClient 0x0D - Invalid data was detected while encoding the temperature message | (Invalid data was detected while encoding the temperature message);( | ANA | ) No action related
+0x490E;Warning - Higer ComClient 0x0E - Some events were not sent through CAN... Check Sysfile. | (Warning - Some events were not sent through CAN... Check Sysfile.);( | ANA | ) No action related
+0x490F;Warning - Higer ComClient 0x0F - Control mode is invalid | (Control mode is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4910;Warning - Higer ComClient 0x10 - VmuCommand Operational mode is invalid | (VmuCommand Operational mode is invalid);( | ACP2 | ) Verify the VMU CAN message functionality
+0x4A01;Info - AcCurrentSensorMgr123 0x01 - Phase 1 current sensor deactivated - Manually | (Info Phase 1 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A02;Info - AcCurrentSensorMgr123 0x02 - Phase 2 current sensor deactivated - Manually | (Info Phase 2 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A03;Info - AcCurrentSensorMgr123 0x03 - Phase 3 current sensor deactivated - Manually | (Info Phase 3 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A04;Warning - AcCurrentSensorMgr123 0x04 - Phase 1 current sensor deactivated - Incorrect initial value | (Warning Phase 1 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A05;Warning - AcCurrentSensorMgr123 0x05 - Phase 2 current sensor deactivated - Incorrect initial value | (Warning Phase 2 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A06;Warning - AcCurrentSensorMgr123 0x06 - Phase 3 current sensor deactivated - Incorrect initial value | (Warning Phase 3 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A07;Warning - AcCurrentSensorMgr123 0x07 - Phase 1 current sensor deactivated - out of range signal | (Warning Phase 1 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A08;Warning - AcCurrentSensorMgr123 0x08 - Phase 2 current sensor deactivated - out of range signal | (Warning Phase 2 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A09;Warning - AcCurrentSensorMgr123 0x09 - Phase 3 current sensor deactivated - out of range signal | (Warning Phase 3 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A0A;Warning - AcCurrentSensorMgr123 0x0A - Phase 1 current sensor deactivated - ISum | (Warning Phase 1 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A0B;Warning - AcCurrentSensorMgr123 0x0B - Phase 2 current sensor deactivated - ISum | (Warning Phase 2 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A0C;Warning - AcCurrentSensorMgr123 0x0C - Phase 3 current sensor deactivated - ISum | (Warning Phase 3 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A0D;Warning - AcCurrentSensorMgr123 0x0D- Two or more current sensors are incorrect - Compensation reverted | (Warning - Two or more current sensors are incorrect - Compensation reverted);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A0E;Warning - AcCurrentSensorMgr123 0x0E- Auto-disable has been turned off manually - No compensation available | (Auto-disable has been turned off manually - No compensation available);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A21;Info - AcCurrentSensorMgr456 0x21 - Phase 4 current sensor deactivated - Manually | (Info Phase 4 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A22;Info - AcCurrentSensorMgr456 0x22 - Phase 5 current sensor deactivated - Manually | (Info Phase 5 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A23;Info - AcCurrentSensorMgr456 0x23 - Phase 6 current sensor deactivated - Manually | (Info Phase 6 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A24;Warning - AcCurrentSensorMgr456 0x24 - Phase 4 current sensor deactivated - Incorrect initial value | (Warning Phase 4 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A25;Warning - AcCurrentSensorMgr456 0x25 - Phase 5 current sensor deactivated - Incorrect initial value | (Warning Phase 5 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A26;Warning - AcCurrentSensorMgr456 0x26 - Phase 6 current sensor deactivated - Incorrect initial value | (Warning Phase 6 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A27;Warning - AcCurrentSensorMgr456 0x27 - Phase 4 current sensor deactivated - out of range signal | (Warning Phase 4 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A28;Warning - AcCurrentSensorMgr456 0x28 - Phase 5 current sensor deactivated - out of range signal | (Warning Phase 5 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A29;Warning - AcCurrentSensorMgr456 0x29 - Phase 6 current sensor deactivated - out of range signal | (Warning Phase 6 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A2A;Warning - AcCurrentSensorMgr456 0x2A - Phase 4 current sensor deactivated - ISum | (Warning Phase 4 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A2B;Warning - AcCurrentSensorMgr456 0x2B - Phase 5 current sensor deactivated - ISum | (Warning Phase 5 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A2C;Warning - AcCurrentSensorMgr456 0x2C - Phase 6 current sensor deactivated - ISum | (Warning Phase 6 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A2D;Warning - AcCurrentSensorMgr456 0x2D- Two or more current sensors are incorrect - Compensation reverted | (Warning - Two or more current sensors are incorrect - Compensation reverted);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A2E;Warning - AcCurrentSensorMgr456 0x2E- Auto-disable has been turned off manually - No compensation available | (Auto-disable has been turned off manually - No compensation available);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A41;Info - AcCurrentSensorMgr789 0x41 - Phase 7 current sensor deactivated - Manually | (Info Phase 7 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A42;Info - AcCurrentSensorMgr789 0x42 - Phase 8 current sensor deactivated - Manually | (Info Phase 8 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A43;Info - AcCurrentSensorMgr789 0x43 - Phase 9 current sensor deactivated - Manually | (Info Phase 9 current sensor deactivated - Manually);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A44;Warning - AcCurrentSensorMgr789 0x44 - Phase 7 current sensor deactivated - Incorrect initial value | (Warning Phase 7 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A45;Warning - AcCurrentSensorMgr789 0x45 - Phase 8 current sensor deactivated - Incorrect initial value | (Warning Phase 8 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A46;Warning - AcCurrentSensorMgr789 0x46 - Phase 9 current sensor deactivated - Incorrect initial value | (Warning Phase 9 current sensor deactivated - Incorrect initial value);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A47;Warning - AcCurrentSensorMgr789 0x47 - Phase 7 current sensor deactivated - out of range signal | (Warning Phase 7 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A48;Warning - AcCurrentSensorMgr789 0x48 - Phase 8 current sensor deactivated - out of range signal | (Warning Phase 8 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A49;Warning - AcCurrentSensorMgr789 0x49 - Phase 9 current sensor deactivated - out of range signal | (Warning Phase 9 current sensor deactivated - out of range signal);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A4A;Warning - AcCurrentSensorMgr789 0x4A - Phase 7 current sensor deactivated - ISum | (Warning Phase 7 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A4B;Warning - AcCurrentSensorMgr789 0x4B - Phase 8 current sensor deactivated - ISum | (Warning Phase 8 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A4C;Warning - AcCurrentSensorMgr789 0x4C - Phase 9 current sensor deactivated - ISum | (Warning Phase 9 current sensor deactivated - ISum);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A4D;Warning - AcCurrentSensorMgr789 0x4D- Two or more current sensors are incorrect - Compensation reverted | (Warning - Two or more current sensors are incorrect - Compensation reverted);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4A4E;Warning - AcCurrentSensorMgr789 0x4E- Auto-disable has been turned off manually - No compensation available | (Auto-disable has been turned off manually - No compensation available);( | ACB*4 | ) Check phase cable integrity (visual inspection) | ( | ACB3 | ) Possible grounding problem; verify inverter and machine grounding connections | ( | AMS*1 | ) Verify VAUX level and connections for the inverter | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4B00;Warning - CoilTempSensorMgr 0x00 - Motor temperature sensor A1 is invalid | (Warning - Motor temperature sensor A1 is invalid.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4B01;Warning - CoilTempSensorMgr 0x01 - Motor temperature sensor B1 is invalid | (Warning - Motor temperature sensor B1 is invalid.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4B02;Warning - CoilTempSensorMgr 0x02 - Motor temperature sensor C1 is invalid | (Warning - Motor temperature sensor C1 is invalid.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4B03;Warning - CoilTempSensorMgr 0x03 - None of the motor temperature sensors is valid | (Warning - None of the motor temperature sensors is valid.);( | ACB1 | ) Verify/change the motor sensor/VMU interface harness between inverter and the machine | ( | AIN1 | ) Change inverter unit | ( | AMA1 | ) Change machine unit
+0x4C00;Warning - Active Discharge 0x00 - VBat increased above voltage threshold | (VBat increased above voltage threshold);( | ANA | ) No action related
+0x4C01;Warning - Active Discharge 0x01 - Internal software error | (Internal software error);( | ANA | ) No action related
+0x4C02;Warning - Active Discharge 0x02 - Batteries are still connected | (Batteries are still connected);( | ANA | ) No action related
+0x4C03;Warning - Active Discharge 0x03 - Exceeded normal discharge time | (Exceeded normal discharge time);( | ANA | ) No action related
+0x4C04;Warning - Active Discharge 0x04 - Motor speed too high at active discharge start | (Motor speed too high at active discharge start);( | ANA | ) No action related

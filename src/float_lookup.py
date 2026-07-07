@@ -252,10 +252,10 @@ if __name__ == "__main__":
     # Test value sets
     test_sets = [
         # ("22-10-2025 10:10", ["3.338", "3.333", "3.332"]),
-        # ("E327-1", ["3.282","0", "3.063"]),
-        # ("E327-5", ["3.282","0", "3.063"]),
-        ("E344", ["3.231","3.227","3.223","3.219","3.224","3.211","3.234","3.231"]) # OK
-        
+        ('E301 ', ['3.281', '3.269', '3.270']),
+        ('E322 ', ['3.262', '3.219', '3.223']),
+
+
     ]
 
     for pack_name, test_values in test_sets:
@@ -263,7 +263,7 @@ if __name__ == "__main__":
         for value in test_values:
             result = lookup_float_value(value)
             if result is not None:  # This will work correctly even if result is 0
-                print(f"Input: {value} -> Return value: {result}")
+                print(f"Input: {value} , Return value: {result}")
             else:
-                print(f"Input: {value} -> No valid result found")
+                print(f"Input: {value} , No valid result found")
 

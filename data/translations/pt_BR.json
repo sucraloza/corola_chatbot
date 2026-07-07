@@ -1,0 +1,55 @@
+{
+  "welcome": "👋 Bem-vindo ao Bot Interpretador de Códigos de Falha!\n\nPara consultar um código de falha, envie uma mensagem neste formato:\n<produto> <código>\n\nProdutos disponíveis:\n- Q1\n- Q2\n- T2\n- Q3\n\nExemplos:\nQ1 16897\nQ2 0x4201\nT2 14592\nQ3 17445\n\nPara consulta de valor float CATL:\nCATL <valor>\nExemplo: CATL 3.247\n\nComandos disponíveis:\n/start - Mostrar esta mensagem de boas-vindas\n/help - Mostrar informações de ajuda\n/list - Listar todos os códigos de falha disponíveis",
+  "help": {
+    "instructions": "Para usar este bot, envie uma mensagem neste formato:",
+    "format": "<produto> <código>",
+    "available_products": "Produtos disponíveis:",
+    "examples": "Exemplos:",
+    "response_format": "O bot responderá com:",
+    "fault_code": "Código de Falha: O código que você inseriu",
+    "name": "Nome: Nome curto da falha",
+    "description": "Descrição: Descrição detalhada",
+    "system": "Sistema: A qual sistema o código pertence",
+    "severity": "Severidade: O nível de severidade",
+    "product": "Produto: O produto que você especificou",
+    "catl_lookup": "Para consulta de valor float CATL:",
+    "catl_example": "CATL <valor>",
+    "example_catl": "Exemplo: CATL 3.247",
+    "valid_range": "Intervalo válido: 2.800 - 3.700",
+    "commands": "Comandos:",
+    "start_cmd": "/start - Iniciar o bot",
+    "help_cmd": "/help - Mostrar esta mensagem de ajuda",
+    "list_cmd": "/list - Mostrar todos os códigos de falha disponíveis"
+  },
+  "errors": {
+    "invalid_format": "Formato inválido. Por favor, use:",
+    "invalid_product": "Produto inválido. Por favor, use um dos produtos disponíveis:",
+    "code_not_found": "Desculpe, não consegui encontrar o código {code} para {product}.",
+    "please_enter": "Por favor, insira:",
+    "hex_code": "Código hexadecimal (ex: 0x4201)",
+    "decimal_code": "Código decimal (ex: 16897)",
+    "use_list": "Use /list para ver os códigos disponíveis.",
+    "or_catl": "Ou use o comando CATL para consulta de valor float:",
+    "example_catl": "CATL 3.247",
+    "invalid_catl_format": "Formato CATL inválido. Por favor, use:",
+    "invalid_catl_value": "Valor de entrada inválido: {value}",
+    "provide_valid": "Por favor, forneça um número válido entre 2.800 e 3.700",
+    "something_wrong": "Ops! Algo deu errado.",
+    "error_occurred": "O bot encontrou um erro ao processar sua solicitação.",
+    "try_again": "Por favor, tente novamente em um momento.",
+    "contact_support": "Se o problema persistir, entre em contato com o suporte."
+  },
+  "fault_response": {
+    "fault_code": "Código de Falha",
+    "name": "Nome",
+    "description": "Descrição",
+    "system": "Sistema",
+    "severity": "Severidade",
+    "product": "Produto"
+  },
+  "catl_response": {
+    "lookup_result": "Resultado da Consulta CATL:",
+    "input_value": "Valor de Entrada",
+    "soc_value": "Valor SOC"
+  }
+}

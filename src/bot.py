@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from float_lookup import lookup_float_value
+from translations import t, get_user_language
 
 # Load environment variables
 load_dotenv()
@@ -239,28 +240,11 @@ fault_codes = load_fault_codes()
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send a message when the command /start is issued."""
     logging.info("COMMAND - /start executed")
-    welcome_message = (
-        "👋 Welcome to the Fault Code Interpreter Bot!\n\n"
-        "To look up a fault code, send a message in this format:\n"
-        "<product> <code>\n\n"
-        "Available products:\n"
-        "- Q1\n"
-        "- Q2\n"
-        "- T2\n"
-        "- Q3\n\n"
-        "Examples:\n"
-        "Q1 16897\n"
-        "Q2 0x4201\n"
-        "T2 14592\n"
-        "Q3 17445\n\n"
-        "For CATL float value lookup:\n"
-        "CATL <value>\n"
-        "Example: CATL 3.247\n\n"
-        "Available commands:\n"
-        "/start - Show this welcome message\n"
-        "/help - Show help information\n"
-        "/list - List all available fault codes"
-    )
+    
+    # Get user language and retrieve welcome message
+    lang = 'pt_BR'
+    welcome_message = t('welcome', lang)
+    
     await update.message.reply_text(welcome_message)
 
 @log_interaction

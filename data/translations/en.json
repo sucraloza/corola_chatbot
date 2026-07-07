@@ -1,0 +1,55 @@
+{
+  "welcome": "👋 Welcome to the Fault Code Interpreter Bot!\n\nTo look up a fault code, send a message in this format:\n<product> <code>\n\nAvailable products:\n- Q1\n- Q2\n- T2\n- Q3\n\nExamples:\nQ1 16897\nQ2 0x4201\nT2 14592\nQ3 17445\n\nFor CATL float value lookup:\nCATL <value>\nExample: CATL 3.247\n\nAvailable commands:\n/start - Show this welcome message\n/help - Show help information\n/list - List all available fault codes",
+  "help": {
+    "instructions": "To use this bot, send a message in this format:",
+    "format": "<product> <code>",
+    "available_products": "Available products:",
+    "examples": "Examples:",
+    "response_format": "The bot will respond with:",
+    "fault_code": "Fault Code: The code you entered",
+    "name": "Name: Short name of the fault",
+    "description": "Description: Detailed description",
+    "system": "System: Which system the code belongs to",
+    "severity": "Severity: The severity level",
+    "product": "Product: The product you specified",
+    "catl_lookup": "For CATL float value lookup:",
+    "catl_example": "CATL <value>",
+    "example_catl": "Example: CATL 3.247",
+    "valid_range": "Valid range: 2.800 - 3.700",
+    "commands": "Commands:",
+    "start_cmd": "/start - Start the bot",
+    "help_cmd": "/help - Show this help message",
+    "list_cmd": "/list - Show all available fault codes"
+  },
+  "errors": {
+    "invalid_format": "Invalid format. Please use:",
+    "invalid_product": "Invalid product. Please use one of the available products:",
+    "code_not_found": "Sorry, I couldn't find code {code} for {product}.",
+    "please_enter": "Please enter either:",
+    "hex_code": "Hex code (e.g., 0x4201)",
+    "decimal_code": "Decimal code (e.g., 16897)",
+    "use_list": "Use /list to see available codes.",
+    "or_catl": "Or use CATL command for float value lookup:",
+    "example_catl": "CATL 3.247",
+    "invalid_catl_format": "Invalid CATL format. Please use:",
+    "invalid_catl_value": "Invalid input value: {value}",
+    "provide_valid": "Please provide a valid number between 2.800 and 3.700",
+    "something_wrong": "Oops! Something went wrong.",
+    "error_occurred": "The bot encountered an error while processing your request.",
+    "try_again": "Please try again in a moment.",
+    "contact_support": "If the problem persists, contact support."
+  },
+  "fault_response": {
+    "fault_code": "Fault Code",
+    "name": "Name",
+    "description": "Description",
+    "system": "System",
+    "severity": "Severity",
+    "product": "Product"
+  },
+  "catl_response": {
+    "lookup_result": "CATL Lookup Result:",
+    "input_value": "Input Value",
+    "soc_value": "SOC Value"
+  }
+}
