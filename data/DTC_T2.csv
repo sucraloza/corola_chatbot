@@ -8,6 +8,8 @@ Jarvis Can Command Send;0x4003;16387;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_C
 Jarvis Can Speed Recived;0x4004;16388;;;Jarvis;Nivel 1;Fusi_Jarvis.c;DTC_JARVIS_CAN_SPEED_RECIVED
 Jarvis Can Pressure Recived;0x4005;16389;;;Jarvis;Nivel 4;Fusi_Jarvis.c;DTC_JARVIS_CAN_PRESSURE_RECIVED
 Jarvis Can Throttle Recived;0x4006;16390;;;Jarvis;Nivel 5;Fusi_Jarvis.c;DTC_JARVIS_CAN_THROTTLE_RECIVED
+Jarvis Can Asr Recived;0x4007;16391;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_ASR_RECIVED
+Jarvis Can Asr Box Recived;0x4008;16392;;;Jarvis;Nivel 2;Fusi_Jarvis.c;DTC_JARVIS_CAN_ASR_BOX_RECIVED
 Air Leak;0x4100;16640;;;Air;Nivel 2;Fusi_Service_Air.c;DTC_AIR_LEAK
 Air Compressor Temp;0x4101;16641;;;Air;Nivel 3;Fusi_Service_Air.c;DTC_AIR_COMPRESSOR_TEMP
 Air Low Pressure;0x4102;16642;;;Air;Nivel 3;Fusi_Service_Air.c;DTC_AIR_LOW_PRESSURE
@@ -99,7 +101,7 @@ Rem Over Ucell Medium;0x4361;17249;;;Battery;Nivel 4;Fusi_Batteries.c;DTC_REM_OV
 Rem Over Ucell Severe;0x4362;17250;;;Battery;Nivel 6;Fusi_Batteries.c;DTC_REM_OVER_UCELL_SEVERE
 Rem Over Ucell Most Severe;0x4363;17251;;;Battery;Nivel 8;Fusi_Batteries.c;DTC_REM_OVER_UCELL_MOST_SEVERE
 Rem Balancing Light;0x4364;17252;;;Battery;Nivel 3;Fusi_Batteries.c;DTC_REM_BALANCING_LIGHT
-Rem Balancing Medium;0x4365;17253;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_REM_BALANCING_MEDIUM
+Rem Balancing Medium;0x4365;17253;;;Battery;Nivel 4;Fusi_Batteries.c;DTC_REM_BALANCING_MEDIUM
 Rem Balancing Severe;0x4366;17254;;;Battery;Nivel 5;Fusi_Batteries.c;DTC_REM_BALANCING_SEVERE
 Btms Mq Can Error;0x4401;17409;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_CAN_ERROR
 Btms Mq T15 Error;0x4402;17410;;;Unknown;Nivel 2;Fusi_BTMS.c;DTC_BTMS_MQ_T15_ERROR
@@ -167,7 +169,9 @@ Motor Interlock;0x4D04;19716;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_INTERLOCK
 Motor Cover Open;0x4D05;19717;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_COVER_OPEN
 Motor Isolation;0x4D06;19718;;;Motor;Nivel 6;Fusi_Motor.c;DTC_MOTOR_ISOLATION
 Motor High Temperature Warning;0x4D07;19719;;;Motor;Nivel 1;Fusi_Motor.c;DTC_MOTOR_HIGH_TEMPERATURE_WARNING
-Motor High Temperature Error;0x4D08;19720;;;Motor;Nivel 3;Fusi_Motor.c;DTC_MOTOR_HIGH_TEMPERATURE_ERROR
+Motor High Temperature Error;0x4D08;19720;;;Motor;Nivel 1;Fusi_Motor.c;DTC_MOTOR_HIGH_TEMPERATURE_ERROR
+Motor Power Limit;0x4D09;19721;;;Motor;Nivel 1;Fusi_Motor.c;DTC_MOTOR_POWER_LIMIT
+Motor Power Neg Limit;0x4D0A;19722;;;Motor;Nivel 1;Fusi_Motor.c;DTC_MOTOR_POWER_NEG_LIMIT
 Pdu No Voltage;0x5001;20481;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_NO_VOLTAGE
 Pdu Bypass;0x5002;20482;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_BYPASS
 Pdu Welded;0x5003;20483;;;PDU;Nivel 6;Fusi_PDU.c;DTC_PDU_WELDED
@@ -194,6 +198,7 @@ System Key Off On Drive;0x5304;21252;;;System;Nivel 1;Fusi_System.c;DTC_SYSTEM_K
 System Motor Coolant Low;0x5305;21253;;;System;Nivel 3;Fusi_System.c;DTC_SYSTEM_MOTOR_COOLANT_LOW
 System Heating Coolant Low;0x5306;21254;;;System;Nivel 1;Fusi_System.c;DTC_SYSTEM_HEATING_COOLANT_LOW
 System Gun While Drive;0x5307;21255;;;System;Nivel 2;Fusi_System.c;DTC_SYSTEM_GUN_WHILE_DRIVE
+System Emergency;0x5308;21256;;;System;Nivel 8;Fusi_System.c;DTC_SYSTEM_EMERGENCY
 Ac Can;0x5500;21760;;;AC;Nivel 2;Fusi_AC.c;DTC_AC_CAN
 Ac Start;0x5501;21761;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_START
 Ac Over Current;0x5502;21762;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_CURRENT
@@ -201,6 +206,8 @@ Ac Over Voltage;0x5503;21763;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_VOLTAGE
 Ac Under Voltage;0x5504;21764;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_UNDER_VOLTAGE
 Ac Over Temperature;0x5505;21765;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_OVER_TEMPERATURE
 Ac Comunication;0x5506;21766;;;AC;Nivel 1;Fusi_AC.c;DTC_AC_COMUNICATION
+Asr Indicator;0x5600;22016;;;Unknown;Nivel 2;Fusi_ASR_REM.c;DTC_ASR_INDICATOR
+Asr Recovering;0x5601;22017;;;Unknown;Nivel 0;Fusi_ASR_REM.c;DTC_ASR_RECOVERING
 Heating Ptc1 Can Error;0x5601;22017;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_CAN_ERROR
 Heating Ptc1 Abnormal High Voltage;0x5602;22018;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_ABNORMAL_HIGH_VOLTAGE
 Heating Ptc1 Reverse High Voltage;0x5603;22019;;;Heating;Nivel 1;Fusi_Heating.c;DTC_HEATING_PTC1_REVERSE_HIGH_VOLTAGE

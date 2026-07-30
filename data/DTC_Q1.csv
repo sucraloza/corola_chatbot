@@ -30,58 +30,58 @@ BTMS MQ PowerOff TO;0x4214;16916;;Terminar viaje, equipo con falla en apagado;Ba
 BTMS MQ CAN Send;0x4215;16917;;Terminar viaje, comunicación CAN en falla;Battery;Nivel 1
 BTMS MQ Undefined;0x4216;16918;;Terminar viaje, equipo en falla default;Battery;Nivel 1
 BTMS MQ Undefined;0x4217;16919;;Terminar viaje, equipo en falla default;Battery;Nivel 1
-BTMS en Falla - undefined;0x4218;16920;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - PTC level 1 failure;0x4219;16921;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Single PTC level 2 fault;0x4220;16928;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4221;16929;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - PTC level 1 failure;0x4222;16930;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Single PTC level 2 fault;0x4223;16931;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4224;16932;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4225;16933;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4226;16934;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4227;16935;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - PTC level 1 failure;0x4228;16936;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Single PTC level 2 fault;0x4229;16937;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4230;16944;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - PTC level 1 failure;0x4231;16945;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Single PTC level 2 fault;0x4232;16946;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4233;16947;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4234;16948;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4235;16949;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4236;16950;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Compressor level 2 fault;0x4237;16951;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4238;16952;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Fan level 2 fault;0x4239;16953;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - High pressure sensor level 2 fault;0x4240;16960;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Low pressure sensor level 3 fault;0x4241;16961;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4242;16962;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - BTMS outlet temperature sensor level 2 fault;0x4243;16963;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Reserved;0x4244;16964;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Water pump;0x4245;16965;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4246;16966;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4247;16967;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Water level sensor level 2 fault;0x4248;16968;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - PTC water temperature sensor level 2 fault;0x4249;16969;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - High voltage precharge 1 level fault;0x4250;16976;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - K2 relay level 1 fault;0x4251;16977;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - DCDC level 1 fault;0x4252;16978;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Slave unit 1 level 1 fault;0x4253;16979;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Slave unit 2 level 2 fault;0x4254;16980;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4255;16981;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Lost communication from unit 1 level 1 fault;0x4256;16982;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Slave unit 2 level 1 fault;0x4257;16983;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Slave unit 2 level 2 fault;0x4258;16984;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4259;16985;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Lost communication from unit 2 level 1 fault;0x4260;16992;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4261;16993;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4262;16994;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4263;16995;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - undefined;0x4264;16996;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Low voltage power supply level 2 fault;0x4265;16997;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - BMS and TMS CAN communication is abnormal;0x4266;16998;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - High voltage total loop contactor level 1 fault;0x4267;16999;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - Exhaust gas temperature level 2 fault;0x4268;17000;;Informar servicio técnico;Battery;Nivel 1
-BTMS en Falla - DCDC Level 2 Fault;0x4269;17001;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - No fault ;0x4218;16920;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure IGBT breakdown;0x4219;16921;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault PTC over temperature, IGBT over temperature, PTC high voltage abnormality, IGBT drive voltage abnormality, PTC heater core short circuit, PTC temperature sensor open or short circuit and PTC communication loss;0x421A;16922;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla -  ;0x421B;16923;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure IGBT breakdown;0x421C;16924;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault PTC over temperature, IGBT over temperature, PTC high voltage abnormality, IGBT drive voltage abnormality, PTC heater core short circuit, PTC temperature sensor open or short circuit and PTC communication loss;0x421D;16925;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x421E;16926;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x421F;16927;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4220;16928;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4221;16929;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure IGBT breakdown;0x4222;16930;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault PTC over temperature, IGBT over temperature, PTC high voltage abnormality, IGBT drive voltage abnormality, PTC heater core short circuit, PTC temperature sensor open or short circuit and PTC communication loss;0x4223;16931;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4224;16932;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - PTC level 1 failure IGBT breakdown;0x4225;16933;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Single PTC level 2 fault PTC over temperature, IGBT over temperature, PTC high voltage abnormality, IGBT drive voltage abnormality, PTC heater core short circuit, PTC temperature sensor open or short circuit and PTC communication loss;0x4226;16934;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4227;16935;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4228;16936;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4229;16937;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x422A;16938;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Compressor level 2 fault The compressor voltage is too low, the compressor voltage is too high, and the compressor current is too high.;0x422B;16939;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x422C;16940;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Fan level 2 fault The cooling fan is open or shorted;0x422D;16941;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - High pressure sensor level 2 fault The refrigeration system pressure is too high, or the high voltage sensor is open, short circuit;0x422E;16942;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Low pressure sensor level 3 fault The refrigeration system pressure is too low, or the high voltage sensor is open, short circuit;0x422F;16943;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4230;16944;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - BTMS outlet temperature sensor level 2 fault Unit outlet water temperature sensor open or short circuit;0x4231;16945;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Reserved Reserved;0x4232;16946;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Water pump Pump not connected, pump overcurrent, overvoltage, short circuit;0x4233;16947;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4234;16948;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4235;16949;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Water level sensor level 2 fault Water tank water shortage, water level sensor open circuit;0x4236;16950;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - PTC water temperature sensor level 2 fault PTC outlet temperature sensor is open or shorted;0x4237;16951;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - High voltage precharge 1 level fault High voltage precharge is not completed prefill;0x4238;16952;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - K2 relay level 1 fault Reserved;0x4239;16953;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - DCDC level 1 fault DCDC overcurrent, overvoltage and DCDC failure;0x423A;16954;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Slave unit 1 level 1 fault Slave unit 1 level 1 fault occurs;0x423B;16955;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Slave unit 1 level 2 fault Slave unit 1 level 2 fault occurs;0x423C;16956;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x423D;16957;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Lost communication from unit 1 level 1 fault Communication from unit 1 to host group is lost;0x423E;16958;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Slave unit 2 level 1 fault Slave unit 2 level 1 fault occurs;0x423F;16959;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Slave unit 2 level 2 fault Slave unit 2 level 2 fault occurs;0x4240;16960;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4241;16961;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Lost communication from unit 2 level 1 fault Communication from unit 2 to host group is lost;0x4242;16962;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4243;16963;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4244;16964;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4245;16965;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - undefined ;0x4246;16966;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Low voltage power supply level 2 fault Low voltage power supply is lower than 18V or higher than 32V;0x4247;16967;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - BMS and TMS CAN communication is abnormal BTMS is not controlled;0x4248;16968;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - High voltage total loop contactor level 1 fault High voltage total loop contactor stuck or broken;0x4249;16969;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - Exhaust gas temperature level 2 fault Exhaust temperature sensor open or shorted;0x424A;16970;;Informar servicio técnico;Battery;Nivel 1
+BTMS en Falla - DCDC Level 2 Fault DCDC power failure;0x424B;16971;;Informar servicio técnico;Battery;Nivel 1
 Dirección CAN;0x4400;17408;;Perdida de comunicación CAN Bomba Dirección;Steering;Nivel 7
 Dirección en Falla ;0x4401;17409;;Bomba de dirección activo una bandera de falla;Steering;Nivel 7
 Bomba Cal. CAN;0x4800;18432;;Perdida de comunicación CAN Bomba Calefaccion;Heating;Nivel 1
